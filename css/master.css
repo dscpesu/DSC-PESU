@@ -1,0 +1,105 @@
+html, body {
+  width: 100%;
+  margin: 0;
+}
+
+html {
+  font-family: Google Sans;
+}
+
+body {
+  opacity: 1;
+  transition: 1s opacity;
+}
+
+body.fade-out {
+  opacity: 0;
+  transition: none;
+}
+
+body {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  overflow: hidden;
+  background: #FFFFFF;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  transition: 0.3s;
+}
+
+#menu.active {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+#menu li {
+  display: inline;
+  float: left;
+}
+
+#menu li a {
+  font-size: 15px;
+  display: block;
+  color: grey;
+  text-align: center;
+  padding: 10px 15px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+#menu li img {
+  display: block;
+  padding: 5px 15px;
+}
+
+#menu li a:hover:not(.active) {
+  color: #00BCD4;
+}
+
+#menu .active {
+  color: #f44336;
+}
+
+.redButton {
+  border: none;
+  background: #f44336;
+  width: 100px;
+  color: white;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 10px;
+  float: right;
+  font-weight: 800;
+  transition: 0.5s;
+}
+
+.redButton:hover {
+  background: #FF5252;
+}
+
+.blueButton {
+  border: none;
+  background: #03A9F4;
+  width: 75px;
+  color: white;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 10px;
+  float: right;
+  font-weight: 800;
+  transition: 0.5s;
+}
+
+.blueButton:hover {
+  background: #40C4FF;
+}
