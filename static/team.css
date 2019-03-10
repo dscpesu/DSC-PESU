@@ -1,7 +1,7 @@
 .heading {
   margin: 0 0 70px;
   color: #000;
-  
+  font-family: 'Roboto', sans-serif;
   font-size: 3.5rem;
   font-weight: 300;
   line-height: 2.625rem;
@@ -25,7 +25,6 @@
     min-width: 100% !important;
     flex-basis: 50% !important;
   }
-
 }
 
 
@@ -151,16 +150,16 @@
 
 .name {
   color: #313435;
-  
+  font-family: 'Roboto', sans-serif;
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 2.625rem;
 }
 
 .info {
   color: #6F808A;
-  font-weight: 400;
-  font-size: 0.975rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.875rem;
   line-height: 2.375rem;
 }
 
@@ -171,10 +170,8 @@
 }
 
 .item {
-  position: relative;
-  bottom:20px;
   display: inline-block;
-  margin: 5px 5px;
+  margin: 10px 10px;
 }
 
 .item a {
@@ -194,7 +191,7 @@
 
 body {
 
- 
+  font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
