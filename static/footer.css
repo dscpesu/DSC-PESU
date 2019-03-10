@@ -33,9 +33,6 @@
 
 
 
-.footer .container {
-    width: auto;
-}
 
 
 
@@ -62,11 +59,11 @@
         text-align: center;
     }
     .footer .row {
-        margin: 0;
+        text-align: center;
     }
-    .footer .column
+    .footer .column1
     {
-        
+        margin:auto;
         display:inline-block;
      
     }
