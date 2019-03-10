@@ -51,6 +51,7 @@ body {
 
 #menu li a {
   font-size: 15px;
+  font-weight: 600;
   display: block;
   color: grey;
   text-align: center;
@@ -105,3 +106,5 @@ body {
 .blueButton:hover {
   background: #40C4FF;
 }
+
+
