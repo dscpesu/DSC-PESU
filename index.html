@@ -1,301 +1,750 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>DSC Pesu</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Google+Sans:400,400i,500,500i,700,700i|Google+Sans+Display:400,400i,500,500i,700,700i&amp;subset=all"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:100,300,400,500,700" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-        crossorigin="anonymous"> -->
-    <style media="screen">
-        .main {
-            margin: 50px;
-            margin-top: 30px;
-            font-size: 1.2em;
-            color: #454545;
+    <title>Bulkit - Agency, Startup and SaaS template</title>
+    <link rel="icon" type="image/png" href="assets/images/logos/DSC-Badge.svg" />
+    <!-- Core css -->
+    <link rel="stylesheet" id="bulma" href="assets/css/bulma.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/core.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/core_lemonade.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <!-- Plugins css -->
+    <link rel="stylesheet" type="text/css" href="assets/js/ggpopover/ggtooltip.css">
+    <!-- Icons -->
+    <link rel="stylesheet" type="text/css" href="assets/css/icons.min.css">
+    <style>
+        .pageloader {
+            background: #ffff !important;
         }
 
-        .main h1 {
-            font-size: 4em;
-        }
-
-        .pesu {
-            color: #DB4437;
-        }
-
-        .dsc {
-            color: #4285F4;
-        }
-
-        video {
-            position: absolute;
-            z-index: -1;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100vh;
-        }
-
-        .loader {
+        .vrg-loader {
             position: fixed;
-            z-index: 99;
-            top: 0;
-            left: 0;
             width: 100%;
-            height: 100vh;
-            background-color: white;
-        }
-
-        .loader.hidden {
-            animation: fadeOut 0.75s;
-            animation-fill-mode: forwards;
-        }
-
-        @keyframes fadeOut {
-            100% {
-                opacity: 0;
-                visibility: hidden;
-            }
+            height: 100%;
+            z-index: 999;
+            overflow: visible;
+            background: url('assets/Loader.gif') no-repeat center center;
         }
     </style>
-    <link rel="shortcut icon" href="static/favicon.ico">
 </head>
 
-<body>
-    <link rel="stylesheet" href="static/master.css">
-    <link rel="stylesheet" type="text/css" href="static/team.css">
+<body onload="quitIntro()">
+    <!-- Pageloader -->
+    <div class="pageloader">
+    </div>
+    <div class="infraloader is-active">
+        <div class="vrg-loader"></div>
+    </div>
 
-    <body oncontextmenu="return false;" ondragstart="return false;" ondrop="return false;">
-        <ul id="menu">
-            <li><img src="media\DSC-Badge.svg" alt="logo" height="30px"></li>
-            <li><a class="active" href="home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#team">Team</a></li>
-            <li><a href="#aboutPES">About PES</a></li>
-            <li style="float: right"><a href="https://pesuacademy.com/">
-                    PESU Academy</a></li>
-        </ul>
-        <div class="main" id="home">
+    <!-- Hero and nav -->
+    <div class="hero is-medium">
+        <div class="navbar-wrapper navbar-fade">
+            <div class="hero-head">
 
-            <section class="hero">
-                <h1><span class="dsc">THE DEVELOPER STUDENT CLUBS</span><br><span class="pesu">PESU</span></h1>
-                <h2>Developer Student Clubs train thousands of student developers globally and work with their
-                    communities to solve real-life problems.</h2>
-            </section>
-
-            <br><br>
-
-            <section class="about" id="about">
-                <br>
-                <h1>ABOUT THE <span class="dsc">DSC</span></h1>
-                <h3>
-                    Google collaborates with university students who are passionate about growing developer communities
-                    and
-                    supports them with starting student clubs on their campuses.
-                    <br><br>
-                    These <span class="dsc">DSCs</span> provide students with the opportunity to:
-                    <br><br>
-                    <ul>
-                        <li>
-                            Grow their knowledge on developer technologies and more through peer to peer workshops and
-                            events.
-                        </li>
-                        <li>
-                            Gain relevant industry experience by solving problems for local organizations with
-                            technology
-                            based solutions.
-                        </li>
-                        <li>
-                            Showcase their prototypes and solutions to their local community and industry leaders.
-                        </li>
-                    </ul>
-                    <br>
-                    Google Developers supports and recognizes <span class="dsc">DSCs</span>, but does not own or manage
-                    them.
-                </h3>
-            </section>
-
-            <section class="team" id="team">
-                <br>
-                <h1>THE TEAM BEHIND <span class="dsc">DSC</span> - <span class="pesu">PESU</span></h1>
+                <!-- Nav -->
                 <div class="container">
-                    <div class="heading"><span style="color:#4285F4">Meet </span><span style="color: #DB4437">the</span><span
-                            style="color: #F4B400"> DSC</span><span style="color:#0F9D58"> Team</span></div>
-                    <div class="row" id="fds">
-                        <div class="column">
-                            <div class="member">
-                                <div class="photo"><img src="media/DSC-Badge.svg" /></div>
-                                <div class="name">Yash Pradhan</div>
-                                <div class="info">DSC Lead</div>
-                                <ul class="social" style="text-align: center;position: relative;right:20px">
-                                    <li class="item"><a href="www.google.com"><img src="media/Facebook.svg"></a></li>
-                                    <li class="item"><a href=""><img src="media/Twitter.svg"></a></li>
-                                    <li class="item"><a href=""><img src="media/GitHub.svg"></a></li>
-                                    <li class="item"><a href=""><img src="media/LinkedIn.svg"></a></li>
-                                </ul>
+                    <nav class="nav">
+                        <div class="container big">
+                            <div class="nav-left">
+                                <a class="nav-item" href="#">
+                                    <img src="assets/images/logos/DSC PESU.png" alt="">
+                                </a>
+                                <a href="#" class="nav-item is-tab nav-inner is-not-mobile">
+                                    Workshops
+                                </a>
+                                <a href="#" class="nav-item is-tab nav-inner is-not-mobile">
+                                    Help
+                                </a>
+                                <a href="#" class="nav-item is-tab nav-inner is-not-mobile">
+                                    Login
+                                </a>
+                            </div>
+                            <!-- Responsive toggle -->
+                            <span class="nav-toggle">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                            <div class="nav-right nav-menu">
+
+                                <a href="#" class="nav-item is-tab nav-inner is-menu-mobile">
+                                    Workshops
+                                </a>
+                                <a href="#" class="nav-item is-tab nav-inner is-menu-mobile">
+                                    Help
+                                </a>
+                                <a href="#" class="nav-item is-tab nav-inner is-menu-mobile">
+                                    Login
+                                </a>
+                                <span class="nav-item">
+                                    <a id="signup-btn" href="landing-v3-signup.html" class="button button-signup btn-outlined is-bold btn-align primary-btn rounded">
+                                        Get Started
+                                    </a>
+                                </span>
                             </div>
                         </div>
-                        <div class="column">
-                            <div class="member">
-                                <div class="photo"><img src="media/DSC-Badge.svg" /></div>
-                                <div class="name">D V Anudeep</div>
-                                <div class="info">Android</div>
-                                <ul class="social" style="text-align: center;position: relative;right:20px">
-                                    <li class="item"><a href=""><img src="media/Facebook.svg"></a></li>
-                                    <li class="item"><a href=""><img src="media/Twitter.svg"></a></li>
-                                    <li class="item"><a href=""><img src="media/GitHub.svg"></a></li>
-                                    <li class="item"><a href=""><img src="media/LinkedIn.svg"></a></li>
-                                </ul>
-                            </div>
+                    </nav>
+                </div>
+                <!-- /Nav -->
+
+            </div>
+        </div>
+
+        <!-- Hero image -->
+        <div id="main-hero" class="hero-body is-relative no-padding-bottom">
+            <div class="container has-text-centered">
+                <div class="columns">
+                    <div class="column is-8 is-offset-2 has-text-centered">
+                        <h1 class="title big-title text-bold is-2">
+                            Developer Student Clubs
+                        </h1>
+                        <h1 class="title big-title text-bold is-2">
+                            PES University
+                        </h1>
+                        <br>
+                        <div class="subtitle light-subtitle">
+                            Developer Student Clubs train thousands of student developers globally and work with their
+                            communities to solve real-life problems.
                         </div>
-                        <div class="column">
-                            <div class="member">
-                                <div class="photo"><img src="media/Mayank.jpeg" /></div>
-                                <div class="name">Mayank Agarwal</div>
-                                <div class="info">Artificial Intelligence & Neural Networks</div>
-                                <ul class="social" style="text-align: center;position: relative;right:20px">
-                                    <!-- <li class="item"><a href=""><img src="media/Facebook.svg"></a></li>
-                                    <li class="item"><a href=""><img src="media/Twitter.svg"></a></li> -->
-                                    <li class="item"><a href="https://github.com/mayankagarwal44442"><img src="media/GitHub.svg"></a></li>
-                                    <li class="item"><a href="https://www.linkedin.com/in/mayank-agarwal44442/"><img src="media/LinkedIn.svg"></a></li>
-                                </ul>
-                            </div>
+                        <br>
+                        <!-- CTA button -->
+                        <div class="has-text-centered">
+                            <a href="landing-v3-signup.html" class="button button-cta primary-btn rounded raised">Get
+                                Started</a>
                         </div>
-                        <div class="column">
-                            <div class="member">
-                                <div class="photo"><img src="media/DSC-Badge.svg" /></div>
-                                <div class="name">Shivangi Jadon</div>
-                                <div class="info">Cloud Computing</div>
-                                <ul class="social" style="text-align: center;position: relative;right:20px">
-                                    <li class="item"><a href=""><img src="media/Facebook.svg"></a></li>
-                                    <li class="item"><a href=""><img src="media/Twitter.svg"></a></li>
-                                    <li class="item"><a href=""><img src="media/GitHub.svg"></a></li>
-                                    <li class="item"><a href=""><img src="media/LinkedIn.svg"></a></li>
-                                </ul>
-                            </div>
+                        <!-- Popup video link -->
+                        <div class="video-link has-text-centered modal-trigger" data-modal="video-modal">
+                            <i class="fa fa-play"></i> <span>See how it works</span>
                         </div>
-                        <div class="column">
-                            <div class="member">
-                                <div class="photo"><img src="media/Sumanth.jpg" /></div>
-                                <div class="name">Sumanth V Rao</div>
-                                <div class="info">Application Development - Python & Big Data</div>
-                                <ul class="social" style="text-align: center;position: relative;right:20px">
-                                    <li class="item"><a href="https://www.facebook.com/sumanth.rao.9638"><img src="media/Facebook.svg"></a></li>
-                                    <li class="item"><a href="https://www.instagram.com/sumanth_svr"><img src="media/Instagram.svg"></a></li>
-                                    <li class="item"><a href="https://github.com/sumanthvrao"><img src="media/GitHub.svg"></a></li>
-                                    <li class="item"><a href="https://www.linkedin.com/in/sumanthvrao"><img src="media/LinkedIn.svg"></a></li>
-                                </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Hero image -->
+    </div>
+    <!-- /Hero and nav -->
+
+    <!-- Mockup section -->
+    <div id="product" class="section is-relative mockup-section">
+        <div class="container">
+            <div class="columns has-text-centered">
+                <div class="column">
+                    <!-- App -->
+                    <img class="app-mockup" src="assets/images/illustrations/mockups/Developer-Student-Clubs.png" alt="">
+                    <!-- Background image -->
+                    <img class="hr-bg" src="assets/images/illustrations/mockups/landing3/hrbg.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Mockup section -->
+
+    <!-- Feature Matrix -->
+    <section id="features" class="section is-medium">
+        <div class="container has-text-centered">
+            <!-- Title -->
+            <div class="section-title-wrapper has-text-centered">
+                <!-- <div class="bg-number">1</div> -->
+                <h2 class="section-title-landing">
+                    Advantages of DSC over other Student Clubs
+                </h2>
+                <h4>The DSCs stand out from your regular college clubs in a lot of ways...</h4>
+            </div>
+            <!-- /Title -->
+
+            <div class="content-wrapper">
+                <div class="columns is-vcentered has-text-centered">
+                    <div class="column is-hidden-mobile"></div>
+                    <!-- Animated Icon box -->
+                    <div class="column is-3">
+                        <div class="square-icon-box is-landing primary">
+                            <div class="icon-box-wrapper">
+                                <div class="icon-box">
+                                    <i class="material-icons">school</i>
+                                </div>
                             </div>
-                        </div>
-                        <div class="column">
-                            <div class="member">
-                                <div class="photo"><img src="media/VRG [AF].png" /></div>
-                                <div class="name">Varun R. Gupta</div>
-                                <div class="info">Network Security and Web Development</div>
-                                <ul class="social" style="text-align: center;position: relative;right:20px">
-                                    <li class="item"><a href="mailto:varungupta3009@gmail.com?subject=Hi%20VRG!&body=Hello!"><img
-                                                src="media/GMail.svg"></a></li>
-                                    <li class="item"><a href="https://twitter.com/varungupta3009"><img src="media/Twitter.svg"></a></li>
-                                    <li class="item"><a href="https://github.com/varungupta3009"><img src="media/GitHub.svg"></a></li>
-                                    <li class="item"><a href="https://www.linkedin.com/in/varungupta3009/"><img src="media/LinkedIn.svg"></a></li>
-                                </ul>
+                            <div class="box-title">
+                                Powered Learning
                             </div>
-                        </div>
-                        <div class="column">
-                            <div class="member">
-                                <div class="photo"><img src="media/Shankar.jpg" /></div>
-                                <div class="name">Umashankar Sivakumar</div>
-                                <div class="info">Web Development, Design</div>
-                                <ul class="social" style="text-align: center;position: relative;right:20px">
-                                    <li class="item"><a href="https://www.facebook.com/umashankar.sivakumar"><img src="media/Facebook.svg"></a></li>
-                                    <li class="item"><a href="https://twitter.com/Umashankar1999"><img src="media/Twitter.svg"></a></li>
-                                    <li class="item"><a href="https://github.com/UmashankarTriforce"><img src="media/GitHub.svg"></a></li>
-                                    <li class="item"><a href="https://www.linkedin.com/in/umashankar-sivakumar-575aa4167"><img
-                                                src="media/LinkedIn.svg"></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="member">
-                                <div class="photo"><img src="media/Ishaan.jpg" /></div>
-                                <div class="name">Ishaan Lagwankar</div>
-                                <div class="info">Machine Learning, Event Management</div>
-                                <ul class="social" style="text-align: center;position: relative;right:20px">
-                                    <li class="item"><a href="https://m.facebook.com/shaanzie.07"><img src="media/Facebook.svg"></a></li>
-                                    <li class="item"><a href="http://www.instagram.com/shaaanziee"><img src="media/Instagram.svg"></a></li>
-                                    <li class="item"><a href="https://github.com/shaanzie"><img src="media/GitHub.svg"></a></li>
-                                    <li class="item"><a href="https://www.linkedin.com/in/ishaan-lagwankar-abb60417b"><img
-                                                src="media/LinkedIn.svg"></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="member">
-                                <div class="photo"><img src="media/DSC-Badge.svg" /></div>
-                                <div class="name">Richa</div>
-                                <div class="info">Outreach</div>
-                                <ul class="social" style="text-align: center;position: relative;right:20px">
-                                    <li class="item"><a href=""><img src="media/Facebook.svg"></a></li>
-                                    <li class="item"><a href=""><img src="media/Twitter.svg"></a></li>
-                                    <li class="item"><a href=""><img src="media/GitHub.svg"></a></li>
-                                    <li class="item"><a href=""><img src="media/LinkedIn.svg"></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="member">
-                                <div class="photo"><img src="media/DSC-Badge.svg" /></div>
-                                <div class="name">Akash Mukhopadhyay</div>
-                                <div class="info">Operations</div>
-                                <ul class="social" style="text-align: center;position: relative;right:20px">
-                                    <li class="item"><a href=""><img src="media/Facebook.svg"></a></li>
-                                    <li class="item"><a href=""><img src="media/Twitter.svg"></a></li>
-                                    <li class="item"><a href=""><img src="media/GitHub.svg"></a></li>
-                                    <li class="item"><a href=""><img src="media/LinkedIn.svg"></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="member">
-                                <div class="photo"><img src="media/DSC-Badge.svg" /></div>
-                                <div class="name">Ishwar Choudhary</div>
-                                <div class="info">Production</div>
-                                <ul class="social" style="text-align: center;position: relative;right:20px">
-                                    <li class="item"><a href=""><img src="media/Facebook.svg"></a></li>
-                                    <li class="item"><a href=""><img src="media/Twitter.svg"></a></li>
-                                    <li class="item"><a href=""><img src="media/GitHub.svg"></a></li>
-                                    <li class="item"><a href=""><img src="media/LinkedIn.svg"></a></li>
-                                </ul>
+                            <div class="box-text is-tablet-padded">
+                                Gib some info to put :P
                             </div>
                         </div>
                     </div>
-            </section>
+                    <!-- /Animated Icon box -->
+                    <!-- Animated Icon box -->
+                    <div class="column is-3">
+                        <div class="square-icon-box is-landing primary">
+                            <div class="icon-box-wrapper">
+                                <div class="icon-box">
+                                    <i class="material-icons">bug_report</i>
+                                </div>
+                            </div>
+                            <div class="box-title">
+                                Streamlined Development
+                            </div>
+                            <div class="box-text is-tablet-padded">
+                                Gib some more info to put :P
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Animated Icon box -->
+                    <!-- Animated Icon box -->
+                    <div class="column is-3">
+                        <div class="square-icon-box is-landing primary">
+                            <div class="icon-box-wrapper">
+                                <div class="icon-box">
+                                    <i class="material-icons">question_answer</i>
+                                </div>
+                            </div>
+                            <div class="box-title">
+                                Exciting Opportunities
+                            </div>
+                            <div class="box-text is-tablet-padded">
+                                I'm waiting :) :)
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Animated Icon box -->
+                    <div class="column is-hidden-mobile"></div>
+                </div>
+
+                <div class="columns is-vcentered has-text-centered">
+                    <div class="column is-hidden-mobile"></div>
+                    <!-- Animated Icon box -->
+                    <div class="column is-3">
+                        <div class="square-icon-box is-landing primary">
+                            <div class="icon-box-wrapper">
+                                <div class="icon-box">
+                                    <i class="material-icons">accessibility_new</i>
+                                </div>
+                            </div>
+                            <div class="box-title">
+                                Lasting Experience
+                            </div>
+                            <div class="box-text is-tablet-padded">
+                                Please???
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Animated Icon box -->
+                    <!-- Animated Icon box -->
+                    <div class="column is-3">
+                        <div class="square-icon-box is-landing primary">
+                            <div class="icon-box-wrapper">
+                                <div class="icon-box">
+                                    <i class="material-icons">https</i>
+                                </div>
+                            </div>
+                            <div class="box-title">
+                                Managed Collaboration
+                            </div>
+                            <div class="box-text is-tablet-padded">
+                                I'm tired of asking :(
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Animated Icon box -->
+                    <!-- Animated Icon box -->
+                    <div class="column is-3">
+                        <div class="square-icon-box is-landing primary">
+                            <div class="icon-box-wrapper">
+                                <div class="icon-box">
+                                    <i class="material-icons">cloud_done</i>
+                                </div>
+                            </div>
+                            <div class="box-title">
+                                Powered by the Best
+                            </div>
+                            <div class="box-text is-tablet-padded">
+                                me ded.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Animated Icon box -->
+                    <div class="column is-hidden-mobile"></div>
+                </div>
+            </div>
+
         </div>
-    </body>
+    </section>
+    <!-- /Feature Matrix -->
 
-    <script type="text/javascript">
-        let menu = document.querySelector("#menu")
-        window.addEventListener("scroll", function (event) {
-            let scroll = this.scrollY;
-            if (scroll) {
-                menu.setAttribute("class", "active")
-            } else {
-                menu.removeAttribute("class")
-            }
-        });
-    </script>
+    <!-- Slanted Parallax Section -->
+    <section id="business-types" class="section is-medium is-skewed-sm parallax is-relative" data-background="assets/images/photos/PES.jpg"
+        data-color="#7F00FF" data-color-opacity="0.6">
+        <div class="container slanted-container is-reverse-skewed-sm">
+            <div class="columns is-vcentered">
+                <div class="column is-5 ">
+                    <div class="content padding-20">
+                        <h2 class="light-text">The PES University Chapter</h2>
+                        <p class="light-text">The Developer Student Clubs - PES University Chapter is the 12th one to
+                            open in the city of Bengaluru. PES University is one the most trusted Universities of
+                            India.</p>
+                        <div class="pt-10 pb-10">
+                            <a href="https://pes.edu/" class="button button-cta btn-align raised light-btn btn-outlined is-bold rounded">
+                                Learn More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-5 is-offset-1">
+                    <img class="featured-svg" src="assets/images/photos/PES-Logo.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /Slanted Parallax Section -->
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    <style>
+        .custom::before,
+        .custom::after {
+            border: 0 solid transparent;
+            box-sizing: border-box;
+            content: '';
+            pointer-events: none;
+            position: absolute;
+            width: 0;
+            height: 0;
+            bottom: 0;
+            right: 0;
+        }
+
+        .custom::before {
+            border-bottom-width: medium;
+            border-left-width: medium;
+        }
+
+        .custom::after {
+            border-top-width: medium;
+            border-right-width: medium;
+        }
+
+        .custom:hover::before,
+        .custom:hover::after {
+            border-bottom-color: #4285F4;
+            border-top-color: #DB4437;
+            border-right-color: #F4B400;
+            border-left-color: #0F9D58;
+            transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+            width: 100%;
+            height: 100%;
+        }
+
+        .custom:hover::before {
+            transition-delay: 0s, 0s, 0.25s;
+        }
+
+        .custom:hover::after {
+            transition-delay: 0s, 0.25s, 0s;
+        }
+
+
+        .custom {
+            float: left;
+            opacity: 1;
+            flex: 0 0 33.3%;
+            padding: 10px;
+            height: 360px;
+            background: #FFF;
+            border: 1px solid #E2E9ED;
+            box-shadow: 0 0 0 1px #E2E9ED;
+            box-sizing: border-box;
+            transition: box-shadow 0.2s ease, -webkit-transform 0.2s ease;
+            transition: box-shadow 0.2s ease, transform 0.2s ease;
+            transition: box-shadow 0.2s ease, transform 0.2s ease, -webkit-transform 0.2s ease;
+
+        }
+
+        .custom:hover {
+            z-index: 1;
+
+            box-shadow: 0 8px 50px rgba(0, 0, 0, 0.2);
+            -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+
+        }
+    </style>
+
+
+    <section class="section is-medium">
+        <div class="container">
+            <div class="section-title-wrapper">
+                <!-- <div class="bg-number"></div> -->
+                <h2 class="title section-title has-text-centered dark-text text-bold">
+                    Meet the Team
+                </h2>
+            </div>
+
+            <div class="content-wrapper">
+                <div class="card-team">
+                    <div class="columns is-gapless is-vcentered is-multiline">
+                        <!-- Team member -->
+                        <div class="column is-3">
+                            <div class="card-team-item">
+                                <div class="flex-card custom">
+                                    <div class="card-body">
+                                        <div class="team-avatar">
+                                            <img src="https://place-hold.it/250x250" alt="">
+                                        </div>
+                                        <div class="member-id">
+                                            <div class="name">
+                                                Test Name
+                                            </div>
+                                            <div class="position">
+                                                Head of Sales
+                                            </div>
+                                        </div>
+                                        <div class="card-social-links">
+                                            <a href="#"><i class="fa fa-twitter"></i></a>
+                                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            <a href="#"><i class="fa fa-dribbble"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Team member -->
+                        <!-- Team member -->
+                        <div class="column is-3">
+                            <div class="card-team-item">
+                                <div class="flex-card custom">
+                                    <div class="card-body">
+                                        <div class="team-avatar">
+                                            <img src="https://place-hold.it/250x250" alt="">
+                                        </div>
+                                        <div class="member-id">
+                                            <div class="name">
+                                                Test Name
+                                            </div>
+                                            <div class="position">
+                                                Sales Manager
+                                            </div>
+                                        </div>
+                                        <div class="card-social-links">
+                                            <a href="#"><i class="fa fa-twitter"></i></a>
+                                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            <a href="#"><i class="fa fa-dribbble"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Team member -->
+                        <!-- Team member -->
+                        <div class="column is-3">
+                            <div class="card-team-item">
+                                <div class="flex-card custom">
+                                    <div class="card-body">
+                                        <div class="team-avatar">
+                                            <img src="https://place-hold.it/250x250" alt="">
+                                        </div>
+                                        <div class="member-id">
+                                            <div class="name">
+                                                Test Name
+                                            </div>
+                                            <div class="position">
+                                                Software Engineer
+                                            </div>
+                                        </div>
+                                        <div class="card-social-links">
+                                            <a href="#"><i class="fa fa-twitter"></i></a>
+                                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            <a href="#"><i class="fa fa-dribbble"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Team member -->
+                        <!-- Team member -->
+                        <div class="column is-3">
+                            <div class="card-team-item">
+                                <div class="flex-card custom">
+                                    <div class="card-body">
+                                        <div class="team-avatar">
+                                            <img src="https://place-hold.it/250x250" alt="">
+                                        </div>
+                                        <div class="member-id">
+                                            <div class="name">
+                                                Test Name
+                                            </div>
+                                            <div class="position">
+                                                Software Engineer
+                                            </div>
+                                        </div>
+                                        <div class="card-social-links">
+                                            <a href="#"><i class="fa fa-twitter"></i></a>
+                                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            <a href="#"><i class="fa fa-dribbble"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Team member -->
+                        <!-- Team member -->
+                        <div class="column is-3">
+                            <div class="card-team-item">
+                                <div class="flex-card custom">
+                                    <div class="card-body">
+                                        <div class="team-avatar">
+                                            <img src="https://place-hold.it/250x250" alt="">
+                                        </div>
+                                        <div class="member-id">
+                                            <div class="name">
+                                                Test Name
+                                            </div>
+                                            <div class="position">
+                                                Accountant
+                                            </div>
+                                        </div>
+                                        <div class="card-social-links">
+                                            <a href="#"><i class="fa fa-twitter"></i></a>
+                                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            <a href="#"><i class="fa fa-dribbble"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Team member -->
+                        <!-- Team member -->
+                        <div class="column is-3">
+                            <div class="card-team-item">
+                                <div class="flex-card custom">
+                                    <div class="card-body">
+                                        <div class="team-avatar">
+                                            <img src="https://place-hold.it/250x250" alt="">
+                                        </div>
+                                        <div class="member-id">
+                                            <div class="name">
+                                                Test Name
+                                            </div>
+                                            <div class="position">
+                                                CTO
+                                            </div>
+                                        </div>
+                                        <div class="card-social-links">
+                                            <a href="#"><i class="fa fa-twitter"></i></a>
+                                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            <a href="#"><i class="fa fa-dribbble"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Team member -->
+                        <!-- Team member -->
+                        <div class="column is-3">
+                            <div class="card-team-item">
+                                <div class="flex-card custom">
+                                    <div class="card-body">
+                                        <div class="team-avatar">
+                                            <img src="https://place-hold.it/250x250" alt="">
+                                        </div>
+                                        <div class="member-id">
+                                            <div class="name">
+                                                Test Name
+                                            </div>
+                                            <div class="position">
+                                                CFO
+                                            </div>
+                                        </div>
+                                        <div class="card-social-links">
+                                            <a href="#"><i class="fa fa-twitter"></i></a>
+                                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            <a href="#"><i class="fa fa-dribbble"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Team member -->
+                        <!-- Team member -->
+                        <div class="column is-3">
+                            <div class="card-team-item">
+                                <div class="flex-card custom">
+                                    <div class="card-body">
+                                        <div class="team-avatar">
+                                            <img src="https://place-hold.it/250x250" alt="">
+                                        </div>
+                                        <div class="member-id">
+                                            <div class="name">
+                                                Test Name
+                                            </div>
+                                            <div class="position">
+                                                CEO
+                                            </div>
+                                        </div>
+                                        <div class="card-social-links">
+                                            <a href="#"><i class="fa fa-twitter"></i></a>
+                                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            <a href="#"><i class="fa fa-dribbble"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Team member -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Team v6 -->
+
+    <!-- CTA Banner -->
+    <section class="section section-primary no-padding-bottom">
+        <div class="container">
+            <div class="columns is-vcentered">
+                <!-- CTA content -->
+                <div class="column is-4 is-offset-1">
+                    <div class="minimal-feature">
+                        <h2 class="title is-5 minimal-title bold-text light-text no-margin">Welcome the DSC in
+                            Bengaluru</h2>
+                        <div class="feature-content light-text">
+                            Join one of the best clubs and gain the best learning experiences in the world, only
+                            through the Developer Student Clubs, now at PES University.
+                        </div>
+                        <div class="pt-20 pb-20">
+                            <a href="signup.html" class="button button-cta btn-outlined is-bold light-btn rounded">Get
+                                started now!</a>
+                            <span class="conditions">Right now.</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- /CTA content -->
+
+                <!-- City illustration -->
+                <div class="column is-5 is-offset-2">
+                    <div class="city-container">
+                        <img src="assets/images/illustrations/drawings/city.svg" alt="">
+                    </div>
+                </div>
+                <!-- /City illustration -->
+            </div>
+        </div>
+    </section>
+    <!-- /CTA Banner -->
+
+    <!-- Footer -->
+    <footer class="footer footer-light-medium">
+        <div class="container">
+            <div class="columns">
+                <!-- Column -->
+                <div class="column is-4">
+                    <div class="pt-10 pb-10">
+                        <img class="footer-logo" style="width: 250px;" src="assets/images/logos/DSC PESU.png" alt="">
+                        <div class="footer-description pt-10 pb-10">
+
+                        </div>
+                    </div>
+                    <div>
+                        <span class="moto">Created with a <i class="fa fa-desktop color-blue"></i> by VRG.</span>
+                        <div class="social-links pt-10 pb-10">
+                            <a href="#">
+                                <span class="icon"><i class="fa fa-facebook"></i></span>
+                            </a>
+                            <a href="#">
+                                <span class="icon"><i class="fa fa-twitter"></i></span>
+                            </a>
+                            <a href="#">
+                                <span class="icon"><i class="fa fa-linkedin"></i></span>
+                            </a>
+                            <a href="#">
+                                <span class="icon"><i class="fa fa-dribbble"></i></span>
+                            </a>
+                            <a href="#">
+                                <span class="icon"><i class="fa fa-github"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Column -->
+                <div class="column is-6 is-offset-2">
+                    <div class="columns">
+                        <!-- Column -->
+                        <div class="column">
+                            <ul class="footer-column">
+                                <li class="column-header">
+                                    DSC PESU
+                                </li>
+                                <li class="column-item"><a href="#">Home</a></li>
+                                <li class="column-item"><a href="#">Workshops</a></li>
+                                <li class="column-item"><a href="#">Get Started</a></li>
+                                <li class="column-item"><a href="#">Help</a></li>
+                            </ul>
+                        </div>
+                        <!-- Column -->
+                        <div class="column">
+                            <ul class="footer-column">
+                                <li class="column-header">
+                                    Resources
+                                </li>
+                                <li class="column-item"><a href="#">Learning</a></li>
+                                <li class="column-item"><a href="#">Support center</a></li>
+                                <li class="column-item"><a href="#">Frequent questions</a></li>
+                            </ul>
+                        </div>
+                        <!-- Column -->
+                        <div class="column">
+                            <ul class="footer-column">
+                                <li class="column-header">
+                                    Terms
+                                </li>
+                                <li class="column-item"><a href="#">Terms of Service</a></li>
+                                <li class="column-item"><a href="#">Privacy policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /Footer -->
+
+    <!-- Back To Top Button -->
+    <div id="backtotop"><a href="#"></a></div>
+
+    <!-- Video modal -->
+    <div id="video-modal" class="modal modal-info">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="side-block is-title-reveal">
+                <div class="background-wrapper">
+                    <div id="video-embed" class="video-wrapper" data-url="https://www.youtube.com/watch?v=G1IbRujko-A">
+                        <div class="video-overlay"></div>
+                        <div class="playbutton">
+                            <div class="icon-play">
+                                <i class="im im-icon-Play-Music"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="modal-close is-large is-hidden stop-video" aria-label="close"></button>
+    </div>
+    <!-- Basic modal -->
+
+
+    <!-- Core js -->
+    <script src="assets/js/core/jquery.min.js"></script>
+    <script src="assets/js/core/modernizr.min.js"></script>
+    <!-- Plugins js -->
+    <script src="assets/js/ggpopover/ggtooltip.js"></script>
+    <script src="assets/js/embed/embed.js"></script>
+    <!-- Bulkit js -->
+    <script src="assets/js/main.js"></script>
+    <!-- Page specific js -->
+    <script src="assets/js/pages/landingv3.js"></script>
+    <script src="assets/js/pages/components-modals.js"></script>
+
 </body>
 
 </html>

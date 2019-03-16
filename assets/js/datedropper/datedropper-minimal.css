@@ -1,0 +1,68 @@
+/*
+
+	INSTRUCTIONS ---------------------------------------------------------------------------------
+  
+  1. link this stylesheet in the head of your HTML
+  	 <link href="YOUR PATH/datedropper-minimal.css" rel="stylesheet" type="text/css" />
+     
+  2. Set the file name as data-theme attribute on your input
+  	 <input data-theme="datedropper-minimal" />
+     
+  3. That's it!
+  
+  When you run script the style will be automatically applied.
+
+*/
+div.datedropper.datedropper-minimal {
+  border-radius: 9px;
+  width: 200px;
+}
+div.datedropper.datedropper-minimal .picker {
+  border-radius: 9px;
+  box-shadow: 0 0 32px 0px rgba(0, 0, 0, 0.1);
+}
+div.datedropper.datedropper-minimal .pick-l {
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+}
+div.datedropper.datedropper-minimal:before,
+div.datedropper.datedropper-minimal .pick-submit,
+div.datedropper.datedropper-minimal .pick-lg-b .pick-sl:before,
+div.datedropper.datedropper-minimal .pick-m,
+div.datedropper.datedropper-minimal .pick-lg-h {
+  background-color: #fff;
+}
+div.datedropper.datedropper-minimal .pick-y.pick-jump,
+div.datedropper.datedropper-minimal .pick li span,
+div.datedropper.datedropper-minimal .pick-lg-b .pick-wke,
+div.datedropper.datedropper-minimal .pick-btn {
+  color: #fff;
+}
+div.datedropper.datedropper-minimal .picker,
+div.datedropper.datedropper-minimal .pick-l {
+  background-color: #fff;
+}
+div.datedropper.datedropper-minimal .picker,
+div.datedropper.datedropper-minimal .pick-arw,
+div.datedropper.datedropper-minimal .pick-l {
+  color: #4D4D4D;
+}
+div.datedropper.datedropper-minimal .pick-m,
+div.datedropper.datedropper-minimal .pick-m .pick-arw,
+div.datedropper.datedropper-minimal .pick-lg-h,
+div.datedropper.datedropper-minimal .pick-lg-b .pick-sl,
+div.datedropper.datedropper-minimal .pick-submit {
+  color: #4d4d4d;
+}
+div.datedropper.datedropper-minimal.picker-tiny:before,
+div.datedropper.datedropper-minimal.picker-tiny .pick-m {
+  background-color: #fff;
+}
+div.datedropper.datedropper-minimal.picker-tiny .pick-m,
+div.datedropper.datedropper-minimal.picker-tiny .pick-m .pick-arw {
+  color: #4D4D4D;
+}
+div.datedropper.datedropper-minimal.picker-lkd .pick-submit {
+  background-color: #fff;
+  color: #4D4D4D;
+}

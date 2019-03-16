@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DSC Pesu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans:400,400i,500,500i,700,700i|Google+Sans+Display:400,400i,500,500i,700,700i&amp;subset=all"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:100,300,400,500,700" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous"> -->
+    <style media="screen">
+        .main {
+            margin: 50px;
+            margin-top: 30px;
+            font-size: 1.2em;
+            color: #454545;
+        }
+
+        .main h1 {
+            font-size: 4em;
+        }
+
+        .pesu {
+            color: #DB4437;
+        }
+
+        .dsc {
+            color: #4285F4;
+        }
+
+        video {
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .loader {
+            position: fixed;
+            z-index: 99;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: white;
+        }
+
+        .loader.hidden {
+            animation: fadeOut 0.75s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes fadeOut {
+            100% {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+    </style>
+    <link rel="shortcut icon" href="static/favicon.ico">
+</head>
+
+<body>
+    <link rel="stylesheet" href="static/master.css">
+    <link rel="stylesheet" type="text/css" href="static/team.css">
+
+    <body oncontextmenu="return false;" ondragstart="return false;" ondrop="return false;">
+        <ul id="menu">
+            <li><img src="media\DSC-Badge.svg" alt="logo" height="30px"></li>
+            <li><a class="active" href="home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#aboutPES">About PES</a></li>
+            <li style="float: right"><a href="https://pesuacademy.com/">
+                    PESU Academy</a></li>
+        </ul>
+        <div class="main" id="home">
+
+            <section class="hero">
+                <h1><span class="dsc">THE DEVELOPER STUDENT CLUBS</span><br><span class="pesu">PESU</span></h1>
+                <h2>Developer Student Clubs train thousands of student developers globally and work with their
+                    communities to solve real-life problems.</h2>
+            </section>
+
+            <br><br>
+
+            <section class="about" id="about">
+                <br>
+                <h1>ABOUT THE <span class="dsc">DSC</span></h1>
+                <h3>
+                    Google collaborates with university students who are passionate about growing developer communities
+                    and
+                    supports them with starting student clubs on their campuses.
+                    <br><br>
+                    These <span class="dsc">DSCs</span> provide students with the opportunity to:
+                    <br><br>
+                    <ul>
+                        <li>
+                            Grow their knowledge on developer technologies and more through peer to peer workshops and
+                            events.
+                        </li>
+                        <li>
+                            Gain relevant industry experience by solving problems for local organizations with
+                            technology
+                            based solutions.
+                        </li>
+                        <li>
+                            Showcase their prototypes and solutions to their local community and industry leaders.
+                        </li>
+                    </ul>
+                    <br>
+                    Google Developers supports and recognizes <span class="dsc">DSCs</span>, but does not own or manage
+                    them.
+                </h3>
+            </section>
+
+            <section class="team" id="team">
+                <br>
+                <h1>THE TEAM BEHIND <span class="dsc">DSC</span> - <span class="pesu">PESU</span></h1>
+                <div class="container">
+                    <div class="heading"><span style="color:#4285F4">Meet </span><span style="color: #DB4437">the</span><span
+                            style="color: #F4B400"> DSC</span><span style="color:#0F9D58"> Team</span></div>
+                    <div class="row" id="fds">
+                        <div class="column">
+                            <div class="member">
+                                <div class="photo"><img src="media/DSC-Badge.svg" /></div>
+                                <div class="name">Yash Pradhan</div>
+                                <div class="info">DSC Lead</div>
+                                <ul class="social" style="text-align: center;position: relative;right:20px">
+                                    <li class="item"><a href="www.google.com"><img src="media/Facebook.svg"></a></li>
+                                    <li class="item"><a href=""><img src="media/Twitter.svg"></a></li>
+                                    <li class="item"><a href=""><img src="media/GitHub.svg"></a></li>
+                                    <li class="item"><a href=""><img src="media/LinkedIn.svg"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="member">
+                                <div class="photo"><img src="media/DSC-Badge.svg" /></div>
+                                <div class="name">D V Anudeep</div>
+                                <div class="info">Android</div>
+                                <ul class="social" style="text-align: center;position: relative;right:20px">
+                                    <li class="item"><a href=""><img src="media/Facebook.svg"></a></li>
+                                    <li class="item"><a href=""><img src="media/Twitter.svg"></a></li>
+                                    <li class="item"><a href=""><img src="media/GitHub.svg"></a></li>
+                                    <li class="item"><a href=""><img src="media/LinkedIn.svg"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="member">
+                                <div class="photo"><img src="media/Mayank.jpeg" /></div>
+                                <div class="name">Mayank Agarwal</div>
+                                <div class="info">Artificial Intelligence & Neural Networks</div>
+                                <ul class="social" style="text-align: center;position: relative;right:20px">
+                                    <!-- <li class="item"><a href=""><img src="media/Facebook.svg"></a></li>
+                                    <li class="item"><a href=""><img src="media/Twitter.svg"></a></li> -->
+                                    <li class="item"><a href="https://github.com/mayankagarwal44442"><img src="media/GitHub.svg"></a></li>
+                                    <li class="item"><a href="https://www.linkedin.com/in/mayank-agarwal44442/"><img src="media/LinkedIn.svg"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="member">
+                                <div class="photo"><img src="media/DSC-Badge.svg" /></div>
+                                <div class="name">Shivangi Jadon</div>
+                                <div class="info">Cloud Computing</div>
+                                <ul class="social" style="text-align: center;position: relative;right:20px">
+                                    <li class="item"><a href=""><img src="media/Facebook.svg"></a></li>
+                                    <li class="item"><a href=""><img src="media/Twitter.svg"></a></li>
+                                    <li class="item"><a href=""><img src="media/GitHub.svg"></a></li>
+                                    <li class="item"><a href=""><img src="media/LinkedIn.svg"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="member">
+                                <div class="photo"><img src="media/Sumanth.jpg" /></div>
+                                <div class="name">Sumanth V Rao</div>
+                                <div class="info">Application Development - Python & Big Data</div>
+                                <ul class="social" style="text-align: center;position: relative;right:20px">
+                                    <li class="item"><a href="https://www.facebook.com/sumanth.rao.9638"><img src="media/Facebook.svg"></a></li>
+                                    <li class="item"><a href="https://www.instagram.com/sumanth_svr"><img src="media/Instagram.svg"></a></li>
+                                    <li class="item"><a href="https://github.com/sumanthvrao"><img src="media/GitHub.svg"></a></li>
+                                    <li class="item"><a href="https://www.linkedin.com/in/sumanthvrao"><img src="media/LinkedIn.svg"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="member">
+                                <div class="photo"><img src="media/VRG [AF].png" /></div>
+                                <div class="name">Varun R. Gupta</div>
+                                <div class="info">Network Security and Web Development</div>
+                                <ul class="social" style="text-align: center;position: relative;right:20px">
+                                    <li class="item"><a href="mailto:varungupta3009@gmail.com?subject=Hi%20VRG!&body=Hello!"><img
+                                                src="media/GMail.svg"></a></li>
+                                    <li class="item"><a href="https://twitter.com/varungupta3009"><img src="media/Twitter.svg"></a></li>
+                                    <li class="item"><a href="https://github.com/varungupta3009"><img src="media/GitHub.svg"></a></li>
+                                    <li class="item"><a href="https://www.linkedin.com/in/varungupta3009/"><img src="media/LinkedIn.svg"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="member">
+                                <div class="photo"><img src="media/Shankar.jpg" /></div>
+                                <div class="name">Umashankar Sivakumar</div>
+                                <div class="info">Web Development, Design</div>
+                                <ul class="social" style="text-align: center;position: relative;right:20px">
+                                    <li class="item"><a href="https://www.facebook.com/umashankar.sivakumar"><img src="media/Facebook.svg"></a></li>
+                                    <li class="item"><a href="https://twitter.com/Umashankar1999"><img src="media/Twitter.svg"></a></li>
+                                    <li class="item"><a href="https://github.com/UmashankarTriforce"><img src="media/GitHub.svg"></a></li>
+                                    <li class="item"><a href="https://www.linkedin.com/in/umashankar-sivakumar-575aa4167"><img
+                                                src="media/LinkedIn.svg"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="member">
+                                <div class="photo"><img src="media/Ishaan.jpg" /></div>
+                                <div class="name">Ishaan Lagwankar</div>
+                                <div class="info">Machine Learning, Event Management</div>
+                                <ul class="social" style="text-align: center;position: relative;right:20px">
+                                    <li class="item"><a href="https://m.facebook.com/shaanzie.07"><img src="media/Facebook.svg"></a></li>
+                                    <li class="item"><a href="http://www.instagram.com/shaaanziee"><img src="media/Instagram.svg"></a></li>
+                                    <li class="item"><a href="https://github.com/shaanzie"><img src="media/GitHub.svg"></a></li>
+                                    <li class="item"><a href="https://www.linkedin.com/in/ishaan-lagwankar-abb60417b"><img
+                                                src="media/LinkedIn.svg"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="member">
+                                <div class="photo"><img src="media/DSC-Badge.svg" /></div>
+                                <div class="name">Richa</div>
+                                <div class="info">Outreach</div>
+                                <ul class="social" style="text-align: center;position: relative;right:20px">
+                                    <li class="item"><a href=""><img src="media/Facebook.svg"></a></li>
+                                    <li class="item"><a href=""><img src="media/Twitter.svg"></a></li>
+                                    <li class="item"><a href=""><img src="media/GitHub.svg"></a></li>
+                                    <li class="item"><a href=""><img src="media/LinkedIn.svg"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="member">
+                                <div class="photo"><img src="media/DSC-Badge.svg" /></div>
+                                <div class="name">Akash Mukhopadhyay</div>
+                                <div class="info">Operations</div>
+                                <ul class="social" style="text-align: center;position: relative;right:20px">
+                                    <li class="item"><a href=""><img src="media/Facebook.svg"></a></li>
+                                    <li class="item"><a href=""><img src="media/Twitter.svg"></a></li>
+                                    <li class="item"><a href=""><img src="media/GitHub.svg"></a></li>
+                                    <li class="item"><a href=""><img src="media/LinkedIn.svg"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="member">
+                                <div class="photo"><img src="media/DSC-Badge.svg" /></div>
+                                <div class="name">Ishwar Choudhary</div>
+                                <div class="info">Production</div>
+                                <ul class="social" style="text-align: center;position: relative;right:20px">
+                                    <li class="item"><a href=""><img src="media/Facebook.svg"></a></li>
+                                    <li class="item"><a href=""><img src="media/Twitter.svg"></a></li>
+                                    <li class="item"><a href=""><img src="media/GitHub.svg"></a></li>
+                                    <li class="item"><a href=""><img src="media/LinkedIn.svg"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+        </div>
+    </body>
+
+    <script type="text/javascript">
+        let menu = document.querySelector("#menu")
+        window.addEventListener("scroll", function (event) {
+            let scroll = this.scrollY;
+            if (scroll) {
+                menu.setAttribute("class", "active")
+            } else {
+                menu.removeAttribute("class")
+            }
+        });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
