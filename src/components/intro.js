@@ -14,16 +14,21 @@ class Intro extends React.Component {
                   width={256}
                   alt="DSC Badge"
                 />
-                <h1 className="title is-spaced is-size-1-desktop is-size-2-tablet is-size-3-mobile">
+                <h1
+                  className="title is-spaced is-size-1-desktop is-size-2-tablet is-size-3-mobile"
+                  style={{
+                    fontWeight: "500"
+                  }}
+                >
                   Welcome to The Developer Student Clubs
                 </h1>
                 <h2 className="subtitle is-size-2-desktop">PES University</h2>
                 <a href="https://bit.ly/dsc-pesu-projects" target="_blank" rel="noopener noreferrer">
-                <button
-                  className="mdc-button mdc-button--outlined"
-                >
-                  <span className="mdc-button__label">Register Now!</span>
-                </button>
+                  <button
+                    className="mdc-button mdc-button--outlined"
+                  >
+                    <span className="mdc-button__label">Enroll Now!</span>
+                  </button>
                 </a>
               </div>
             </div>

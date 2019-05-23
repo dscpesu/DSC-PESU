@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import LoaderWrapper from './components/loader_wrapper';
 import Navbar from './components/navbar';
 import Intro from './components/intro';
+import Workshops from './components/workshops';
 import Projects from './components/projects';
 import Team from './components/team';
 import Footer from './components/footer';
@@ -20,8 +21,9 @@ class App extends Component {
         <LoaderWrapper />
         <Navbar />
         <Intro />
-        <Projects />
+        <Workshops />
         <Team />
+        <Projects />
         <Footer />
       </div>
     );

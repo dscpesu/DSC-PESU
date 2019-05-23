@@ -1,69 +1,37 @@
 import React from "react";
 
 class Projects extends React.Component {
-  render() {
-    return (
-      <section
-        className="section projects is-medium is-white has-text-centered"
-        style={{
-          margin: "0 0 50px 0"
-        }}
-      >
-        <div className="container is-narrow">
-          <h1
-            className="title is-spaced is-size-2-desktop is-size-3-mobile"
-            style={{
-              margin: "0 0 100px 0"
-            }}
-          >
-            Our Workshops
-          </h1>
-          <div className="project-grid">
-            <div className="columns is-multiline is-mobile">
-              <div className="column is-12-mobile is-half-tablet is-one-third-desktop">
-                <div className="card">
-                  <div className="card-image">
-                    <figure className="image">
-                      <img
+    render() {
+        return (
+            //   <section
+            //     className="hero has-text-centered is-fullheight-with-navbar has-background-link"
+            //   >
+            //       <h1
+            //         className="title is-spaced is-size-2-desktop is-size-3-mobile"
+            //         style={{
+            //           color: "#FFFFFF"
+            //         }}
+            //       >
+            //         DSC Projects are here!
+            //       </h1>
+            //   </section>
+            <section className="hero has-text-centered is-fullheight-with-navbar is-info">
+                <div className="hero-body">
+                    <div className="container">
+                        <h1 className="title is-spaced is-size-1-desktop is-size-2-mobile"
                         style={{
-                          display: "block"
+                            fontWeight: "400"
                         }}
-                        src={require("../assets/Lord-Commander.jpg")}
-                        alt="Placeholder image"
-                      />
-                    </figure>
-                  </div>
-                  <div className="card-content">
-                    <div className="media">
-                      {}
-                      <div className="media-content">
-                        <p className="title is-4">
-                          Introduction to Machine Learning
-                        </p>
-                        <p className="subtitle is-6">Our first workshop.</p>
-                      </div>
+                            >
+                            DSC Projects are here!
+                        </h1>
+                        <br /><br />
+                        <a href="https://bit.ly/dsc-pesu-projects" target="_blank" rel="noopener noreferrer" className="button is-primary is-inverted is-medium">Enroll Now!</a>
                     </div>
-                    <div className="content has-text-left">
-                      Here is our Lord Commander, giving his introductory speech
-                      before the workshop.
-                      <br />
-                      <a href="https://www.instagram.com/dscpesu/" target="_blank" rel="noopener noreferrer">@DSCPESU</a>
-                      <br />
-                    </div>
-                  </div>
-                  <footer className="card-footer">
-                    <a href="https://www.instagram.com/p/BvjuXVYDLdI/" target="_blank" rel="noopener noreferrer" className="card-footer-item">
-                      Learn More...
-                    </a>
-                  </footer>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    );
-  }
+            </section>
+        );
+    }
 }
 
 export default Projects;

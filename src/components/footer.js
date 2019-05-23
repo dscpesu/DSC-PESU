@@ -3,9 +3,11 @@ import React from "react";
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDesktop, faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
-import { faFacebook, faTwitter, faLinkedin, faDribbble, faGithub } from '@fortawesome/free-brands-svg-icons'
+// import { faFacebook, faTwitter, faLinkedin, faDribbble, faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 
-library.add(faDesktop, faChevronLeft, faChevronRight, faFacebook, faTwitter, faLinkedin, faDribbble, faGithub);
+// library.add(faDesktop, faChevronLeft, faChevronRight, faFacebook, faTwitter, faLinkedin, faDribbble, faGithub);
+library.add(faDesktop, faChevronLeft, faChevronRight, faInstagram);
 
 class Footer extends React.Component {
   render() {
@@ -39,7 +41,7 @@ class Footer extends React.Component {
           }}
         >
           <div className="social-links">
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            {/* <a href="#" target="_blank" rel="noopener noreferrer">
               <span className="icon is-large">
                 <FontAwesomeIcon icon={['fab', 'facebook']} size="lg" />
               </span>
@@ -62,6 +64,11 @@ class Footer extends React.Component {
             <a href="#" target="_blank" rel="noopener noreferrer">
               <span className="icon is-large">
                 <FontAwesomeIcon icon={['fab', 'github']} size="lg" />
+              </span>
+            </a> */}
+            <a href="https://www.instagram.com/dscpesu/" target="_blank" rel="noopener noreferrer">
+              <span className="icon is-large">
+                <FontAwesomeIcon icon={['fab', 'instagram']} size="lg" />
               </span>
             </a>
           </div>

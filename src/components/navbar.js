@@ -40,7 +40,7 @@ class Navbar extends React.Component {
                   <button
                     className="mdc-button mdc-button--outlined"
                   >
-                    <span className="mdc-button__label">Register Now!</span>
+                    <span className="mdc-button__label">Enroll Now!</span>
                   </button>
                 </a>
               </div>

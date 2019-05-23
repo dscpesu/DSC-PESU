@@ -41,7 +41,7 @@ class Team extends React.Component {
               <div className="column">
                 <div className="member">
                   <div className="photo">
-                    <img src={require("../assets/Yash.jpg")} />
+                    <img src={require("../assets/Yash.jpeg")} />
                   </div>
                   <div className="name">Yash Pradhan</div>
                   <div className="info">DSC Lead</div>
@@ -53,22 +53,17 @@ class Team extends React.Component {
                     }}
                   >
                     <li className="item">
-                      <a href="www.google.com" target="_blank" rel="noopener noreferrer">
-                        <img src={require("../assets/Facebook.svg")} />
+                      <a href="http://instagram.com/yazzpradzz" target="_blank" rel="noopener noreferrer">
+                        <img src={require("../assets/Instagram.svg")} />
                       </a>
                     </li>
                     <li className="item">
-                      <a href>
-                        <img src={require("../assets/Twitter.svg")} />
-                      </a>
-                    </li>
-                    <li className="item">
-                      <a href>
+                      <a href="http://github.com/techgod" target="_blank" rel="noopener noreferrer">
                         <img src={require("../assets/GitHub.svg")} />
                       </a>
                     </li>
                     <li className="item">
-                      <a href>
+                      <a href="http://linkedin.com/in/yashpradhan98" target="_blank" rel="noopener noreferrer">
                         <img src={require("../assets/LinkedIn.svg")} />
                       </a>
                     </li>
@@ -89,7 +84,7 @@ class Team extends React.Component {
                       position: "relative"
                     }}
                   >
-                    <li className="item">
+                    {/* <li className="item">
                       <a href>
                         <img src={require("../assets/Facebook.svg")} />
                       </a>
@@ -108,7 +103,7 @@ class Team extends React.Component {
                       <a href>
                         <img src={require("../assets/LinkedIn.svg")} />
                       </a>
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
               </div>
@@ -377,7 +372,7 @@ class Team extends React.Component {
                       position: "relative"
                     }}
                   >
-                    <li className="item">
+                    {/* <li className="item">
                       <a href>
                         <img src={require("../assets/Facebook.svg")} />
                       </a>
@@ -396,7 +391,7 @@ class Team extends React.Component {
                       <a href>
                         <img src={require("../assets/LinkedIn.svg")} />
                       </a>
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
               </div>
@@ -415,22 +410,17 @@ class Team extends React.Component {
                     }}
                   >
                     <li className="item">
-                      <a href>
-                        <img src={require("../assets/Facebook.svg")} />
+                      <a href="http://instagram.com/ishwartakespictures" target="_blank" rel="noopener noreferrer">
+                        <img src={require("../assets/Instagram.svg")} />
                       </a>
                     </li>
                     <li className="item">
-                      <a href>
-                        <img src={require("../assets/Twitter.svg")} />
-                      </a>
-                    </li>
-                    <li className="item">
-                      <a href>
+                      <a href="https://github.com/ishwarc404" target="_blank" rel="noopener noreferrer">
                         <img src={require("../assets/GitHub.svg")} />
                       </a>
                     </li>
                     <li className="item">
-                      <a href>
+                      <a href="https://www.linkedin.com/in/ishwar-choudhary-089163175/" target="_blank" rel="noopener noreferrer">
                         <img src={require("../assets/LinkedIn.svg")} />
                       </a>
                     </li>
