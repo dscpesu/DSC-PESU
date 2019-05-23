@@ -1,23 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "a550c94977ee5a232089",
+    "revision": "2facf56827f98932e782",
     "url": "/DSC-PESU/static/css/main.61d05f9c.chunk.css"
   },
   {
-    "revision": "a550c94977ee5a232089",
-    "url": "/DSC-PESU/static/js/main.397b7ef8.chunk.js"
+    "revision": "2facf56827f98932e782",
+    "url": "/DSC-PESU/static/js/main.793c87fe.chunk.js"
   },
   {
     "revision": "bc951fc5e7dbf964e0dc",
     "url": "/DSC-PESU/static/js/runtime~main.5dec7e2f.js"
   },
   {
-    "revision": "d5d411192da356fe7df3",
+    "revision": "5c8ec347f780c286eeb6",
     "url": "/DSC-PESU/static/css/2.01c7df8d.chunk.css"
   },
   {
-    "revision": "d5d411192da356fe7df3",
-    "url": "/DSC-PESU/static/js/2.683a7cd7.chunk.js"
+    "revision": "5c8ec347f780c286eeb6",
+    "url": "/DSC-PESU/static/js/2.f703b7ee.chunk.js"
   },
   {
     "revision": "991411505951f7763636c7f0fa823803",
@@ -28,20 +28,20 @@ self.__precacheManifest = [
     "url": "/DSC-PESU/static/media/GitHub.a861f003.svg"
   },
   {
-    "revision": "f4fd696f8e4302f4c4a8e5cbbae9e2d8",
-    "url": "/DSC-PESU/static/media/Facebook.f4fd696f.svg"
-  },
-  {
-    "revision": "f1756ea2cd91f823fa9a55b3e03b6506",
-    "url": "/DSC-PESU/static/media/Twitter.f1756ea2.svg"
-  },
-  {
     "revision": "901657aed4830ebbf866910d6da73002",
     "url": "/DSC-PESU/static/media/Instagram.901657ae.svg"
   },
   {
+    "revision": "f4fd696f8e4302f4c4a8e5cbbae9e2d8",
+    "url": "/DSC-PESU/static/media/Facebook.f4fd696f.svg"
+  },
+  {
     "revision": "f5679741b14945b987e6a235b0c993e3",
     "url": "/DSC-PESU/static/media/GMail.f5679741.svg"
+  },
+  {
+    "revision": "f1756ea2cd91f823fa9a55b3e03b6506",
+    "url": "/DSC-PESU/static/media/Twitter.f1756ea2.svg"
   },
   {
     "revision": "c2c5f62ddbd03435e88c3792b9ff71b7",
@@ -56,8 +56,8 @@ self.__precacheManifest = [
     "url": "/DSC-PESU/static/media/Lord-Commander.318f534d.jpg"
   },
   {
-    "revision": "3df4db3c780dda8cb868d7d3d9533309",
-    "url": "/DSC-PESU/static/media/Yash.3df4db3c.jpg"
+    "revision": "b7c50daff2100e8df828eb7dd34d91b0",
+    "url": "/DSC-PESU/static/media/Yash.b7c50daf.jpeg"
   },
   {
     "revision": "cbab995b916ef4e4b0d5df13feb3bd48",
@@ -108,7 +108,7 @@ self.__precacheManifest = [
     "url": "/DSC-PESU/static/media/Google Dots by VRG.00955c34.gif"
   },
   {
-    "revision": "682656795a0e4f7e351d81491ae48bfd",
+    "revision": "2e27da1e54b6c427da4164fd63a14706",
     "url": "/DSC-PESU/index.html"
   }
 ];

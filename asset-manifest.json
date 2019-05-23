@@ -1,14 +1,14 @@
 {
   "main.css": "/DSC-PESU/static/css/main.61d05f9c.chunk.css",
-  "main.js": "/DSC-PESU/static/js/main.397b7ef8.chunk.js",
-  "main.js.map": "/DSC-PESU/static/js/main.397b7ef8.chunk.js.map",
+  "main.js": "/DSC-PESU/static/js/main.793c87fe.chunk.js",
+  "main.js.map": "/DSC-PESU/static/js/main.793c87fe.chunk.js.map",
   "runtime~main.js": "/DSC-PESU/static/js/runtime~main.5dec7e2f.js",
   "runtime~main.js.map": "/DSC-PESU/static/js/runtime~main.5dec7e2f.js.map",
   "static/css/2.01c7df8d.chunk.css": "/DSC-PESU/static/css/2.01c7df8d.chunk.css",
-  "static/js/2.683a7cd7.chunk.js": "/DSC-PESU/static/js/2.683a7cd7.chunk.js",
-  "static/js/2.683a7cd7.chunk.js.map": "/DSC-PESU/static/js/2.683a7cd7.chunk.js.map",
+  "static/js/2.f703b7ee.chunk.js": "/DSC-PESU/static/js/2.f703b7ee.chunk.js",
+  "static/js/2.f703b7ee.chunk.js.map": "/DSC-PESU/static/js/2.f703b7ee.chunk.js.map",
   "index.html": "/DSC-PESU/index.html",
-  "precache-manifest.bac145d544fb4b6b7dc903ba2816bbaa.js": "/DSC-PESU/precache-manifest.bac145d544fb4b6b7dc903ba2816bbaa.js",
+  "precache-manifest.725bb3acc78599e461f1f745303deab6.js": "/DSC-PESU/precache-manifest.725bb3acc78599e461f1f745303deab6.js",
   "service-worker.js": "/DSC-PESU/service-worker.js",
   "static/css/2.01c7df8d.chunk.css.map": "/DSC-PESU/static/css/2.01c7df8d.chunk.css.map",
   "static/css/main.61d05f9c.chunk.css.map": "/DSC-PESU/static/css/main.61d05f9c.chunk.css.map",
@@ -33,5 +33,5 @@
   "static/media/Sumanth.jpg": "/DSC-PESU/static/media/Sumanth.87fb78e2.jpg",
   "static/media/Twitter.svg": "/DSC-PESU/static/media/Twitter.f1756ea2.svg",
   "static/media/VRG [AF].png": "/DSC-PESU/static/media/VRG [AF].d4fe5116.png",
-  "static/media/Yash.jpg": "/DSC-PESU/static/media/Yash.3df4db3c.jpg"
+  "static/media/Yash.jpeg": "/DSC-PESU/static/media/Yash.b7c50daf.jpeg"
 }

@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/DSC-PESU/precache-manifest.bac145d544fb4b6b7dc903ba2816bbaa.js"
+  "/DSC-PESU/precache-manifest.725bb3acc78599e461f1f745303deab6.js"
 );
 
 workbox.clientsClaim();
