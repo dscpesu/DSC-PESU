@@ -12,7 +12,7 @@ import 'bulma';
 import $ from 'jquery';
 
 import './css/home.css';
-import './bundle.css';
+import './App.scss';
 
 class App extends Component {
   render() {

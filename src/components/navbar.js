@@ -1,4 +1,5 @@
 import React from "react";
+import Button from '@material/react-button';
 
 class Navbar extends React.Component {
   render() {
@@ -17,7 +18,7 @@ class Navbar extends React.Component {
                 height={48}
               />
             </a>
-            <a
+            <div
               role="button"
               className="navbar-burger"
               data-target="navbarMenu"
@@ -27,7 +28,7 @@ class Navbar extends React.Component {
               <span aria-hidden="true" />
               <span aria-hidden="true" />
               <span aria-hidden="true" />
-            </a>
+            </div>
           </div>
           <div id="navbarMenu" className="navbar-menu">
             <div className="navbar-start" />
@@ -37,11 +38,9 @@ class Navbar extends React.Component {
               </a>
               <div className="navbar-item">
                 <a href="https://bit.ly/dsc-pesu-projects" target="_blank" rel="noopener noreferrer">
-                  <button
-                    className="mdc-button mdc-button--outlined"
-                  >
-                    <span className="mdc-button__label">Enroll Now!</span>
-                  </button>
+                  <Button outlined className='b-o'>
+                    Enroll Now!
+                  </Button>
                 </a>
               </div>
             </div>

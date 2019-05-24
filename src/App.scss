@@ -1,0 +1,12 @@
+@import "@material/react-button/index.scss";
+
+@import "@material/button/mixins";
+
+.b-r {
+    @include mdc-button-filled-accessible(#1A73E8);
+}
+
+.b-o {
+    @include mdc-button-outline-color(#1A73E8);
+    @include mdc-button-ink-color(#1A73E8);
+}

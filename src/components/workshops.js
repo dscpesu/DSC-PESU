@@ -32,7 +32,7 @@ class Workshops extends React.Component {
                           borderRadius: "20px 20px 0px 0px"
                         }}
                         src={require("../assets/Lord-Commander.jpg")}
-                        alt="Placeholder image"
+                        alt="Lord-Commander"
                       />
                     </figure>
                   </div>

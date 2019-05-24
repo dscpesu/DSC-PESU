@@ -26,7 +26,7 @@ class Projects extends React.Component {
                             DSC Projects are here!
                         </h1>
                         <br /><br />
-                        <a href="https://bit.ly/dsc-pesu-projects" target="_blank" rel="noopener noreferrer" className="button is-primary is-inverted is-medium">Enroll Now!</a>
+                        <a href="https://bit.ly/dsc-pesu-projects" target="_blank" rel="noopener noreferrer" className="button is-info is-inverted is-medium">Enroll Now!</a>
                     </div>
                 </div>
             </section>

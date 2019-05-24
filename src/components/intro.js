@@ -1,4 +1,5 @@
 import React from "react";
+import Button from '@material/react-button';
 
 class Intro extends React.Component {
   render() {
@@ -24,11 +25,9 @@ class Intro extends React.Component {
                 </h1>
                 <h2 className="subtitle is-size-2-desktop">PES University</h2>
                 <a href="https://bit.ly/dsc-pesu-projects" target="_blank" rel="noopener noreferrer">
-                  <button
-                    className="mdc-button mdc-button--outlined"
-                  >
-                    <span className="mdc-button__label">Enroll Now!</span>
-                  </button>
+                  <Button raised className="b-r">
+                    Enroll Now!
+                  </Button>
                 </a>
               </div>
             </div>
