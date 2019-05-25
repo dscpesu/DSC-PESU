@@ -1,0 +1,74 @@
+// The Perfect Google Dots Animation, implemented in Sass
+// Created by Varun R Gupta (https://github.com/varungupta3009/)
+// Original Template by Eliseo Martelli (https://codepen.io/eliseomartelli/pen/mEqqWQ)
+
+
+// Properties of the original Dots Animation by Google (found out using a gif on
+// https://design.google/library/evolving-google-identity/ and analyzing the
+// animation duration, speed and delay)
+
+// Duration: 1.5s (51 frames from start to end to start, each with a delay of 0.03s)
+// Delay between dots: Duration/4 = 0.1875s
+// Radius: 1 Unit
+// Description: Each dot moves 0.5 times its radius above its pivot for half the Duration,
+//  then moves back down at the same speed. This animation is most likely eased in-and-out.
+//  Each dot is spaced from its adjacent dots by a length twice that of its radius.
+
+
+// The Latest Color Palette of Google (released with MD2, 09/01/2015)
+$blue: #4285F4;
+$red: #EA4335;
+$yellow: #FBBC05;
+$green: #34A853;
+
+$velocity: 1.5s ease-in-out;
+$delay: 0.1875s;
+$diameter: 35px;
+
+// Properties of all the Dots
+.dot {
+    display: inline-block;
+    border-radius: calc(#{$diameter}/2);
+    width: $diameter;
+    height: $diameter;
+    margin: calc(#{$diameter}/2);
+    transform: translateZ(0);
+    animation: move $velocity infinite;
+}
+
+// Properties of the Blue Dot
+#blue {
+    background: $blue;
+    animation-delay: calc(#{$delay} * 1);
+}
+
+// Properties of the Red Dot
+#red {
+    background: $red;
+    animation-delay: calc(#{$delay} * 2);
+}
+
+// Properties of the Yellow Dot
+#yellow {
+    background: $yellow;
+    animation-delay: calc(#{$delay} * 3);
+}
+
+// Properties of the Green Dot
+#green {
+    background: $green;
+    animation-delay: calc(#{$delay} * 4);
+}
+
+// Container that houses the four dots
+// Not needed on the DSC Website
+// [REDACTED]
+
+// The transformation animation property of the dots.
+// Translate 0.5 times radius above the pivot for half the animation,
+// and then back to the original point in the other half
+@keyframes move {
+    50% {
+        transform: translateY(calc(#{$diameter} / -2));
+    }
+}

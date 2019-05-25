@@ -23,7 +23,7 @@ class App extends Component {
         <Intro />
         <Workshops />
         <Team />
-        <Projects />
+        {'HTMLPortalElement' in window ? <Projects /> : null}
         <Footer />
       </div>
     );

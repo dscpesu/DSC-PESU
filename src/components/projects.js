@@ -1,6 +1,15 @@
 import React from "react";
 
 class Projects extends React.Component {
+    reveal(e) {
+        //e.target.classList.add('portal-reveal');
+        e.target.activate();
+    }
+
+    activate(e) {
+        e.target.activate();
+    }
+
     render() {
         return (
             //   <section
@@ -15,18 +24,24 @@ class Projects extends React.Component {
             //         DSC Projects are here!
             //       </h1>
             //   </section>
-            <section className="hero has-text-centered is-fullheight-with-navbar is-info">
+            <section className="hero has-text-centered is-fullheight-with-navbar">
                 <div className="hero-body">
                     <div className="container">
                         <h1 className="title is-spaced is-size-1-desktop is-size-2-mobile"
-                        style={{
-                            fontWeight: "400"
-                        }}
-                            >
-                            DSC Projects are here!
+                            style={{
+                                fontWeight: "400"
+                            }}
+                        >
+                            Learn more about the DSC
                         </h1>
-                        <br /><br />
-                        <a href="https://bit.ly/dsc-pesu-projects" target="_blank" rel="noopener noreferrer" className="button is-info is-inverted is-medium">Enroll Now!</a>
+                        <h2>
+                            This Website Supports Portals! Yay!
+                        </h2>
+                        <div className="container">
+                            <div className="portal" style={{height: "1000"}}>
+                                <portal id="portal" src="https://developers.google.com/programs/dsc/stories/" onClick={this.reveal} onTransitionEnd={this.activate} />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
