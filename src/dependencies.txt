@@ -1,0 +1,16 @@
+npm i @fortawesome/fontawesome-svg-core \
+npm i @fortawesome/free-brands-svg-icons \
+npm i @fortawesome/free-solid-svg-icons \
+npm i @fortawesome/react-fontawesome
+
+npm i node-sass \
+npm i bulma
+
+npm i @types/react @types/react-dom @types/classnames @types/node typescript \
+npm i @material/react-button
+
+npm i gh-pages --save-dev
+
+npm i jquery
+
+SET SASS_PATH=.\node_modules
