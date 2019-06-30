@@ -1,23 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "b41f7e3509eb66c4dd0e",
-    "url": "/DSC-PESU/static/css/main.5227fa99.chunk.css"
+    "revision": "2a39e0e11c89ff72a848",
+    "url": "/DSC-PESU/static/css/main.f3751ad5.chunk.css"
   },
   {
-    "revision": "b41f7e3509eb66c4dd0e",
-    "url": "/DSC-PESU/static/js/main.a9549135.chunk.js"
+    "revision": "2a39e0e11c89ff72a848",
+    "url": "/DSC-PESU/static/js/main.2c7414d2.chunk.js"
   },
   {
     "revision": "bc951fc5e7dbf964e0dc",
     "url": "/DSC-PESU/static/js/runtime~main.5dec7e2f.js"
   },
   {
-    "revision": "88d0fc54d59aca26f8fe",
-    "url": "/DSC-PESU/static/css/2.372d99da.chunk.css"
+    "revision": "bc43af776a0c2ef3cc98",
+    "url": "/DSC-PESU/static/css/2.8529dc3a.chunk.css"
   },
   {
-    "revision": "88d0fc54d59aca26f8fe",
-    "url": "/DSC-PESU/static/js/2.d3889e95.chunk.js"
+    "revision": "bc43af776a0c2ef3cc98",
+    "url": "/DSC-PESU/static/js/2.87ef2e44.chunk.js"
   },
   {
     "revision": "991411505951f7763636c7f0fa823803",
@@ -44,12 +44,16 @@ self.__precacheManifest = [
     "url": "/DSC-PESU/static/media/Twitter.f1756ea2.svg"
   },
   {
-    "revision": "c2c5f62ddbd03435e88c3792b9ff71b7",
-    "url": "/DSC-PESU/static/media/DSC-H.c2c5f62d.png"
+    "revision": "00955c347a8db0e81ee8c3695b0ce073",
+    "url": "/DSC-PESU/static/media/Google Dots by VRG.00955c34.gif"
   },
   {
     "revision": "300f3bec7bdaf7001c9f28184235b88b",
     "url": "/DSC-PESU/static/media/DSC-Badge-by-VRG.300f3bec.svg"
+  },
+  {
+    "revision": "c2c5f62ddbd03435e88c3792b9ff71b7",
+    "url": "/DSC-PESU/static/media/DSC-H.c2c5f62d.png"
   },
   {
     "revision": "318f534d72229d03d8ffc5f7a34b84b1",
@@ -92,8 +96,8 @@ self.__precacheManifest = [
     "url": "/DSC-PESU/static/media/Richa.8ed0ab37.jpg"
   },
   {
-    "revision": "92a4fcf5422dd04d9fb82689cf4a3b17",
-    "url": "/DSC-PESU/static/media/Akash.92a4fcf5.jpg"
+    "revision": "5837939e13fee437c1b6998bf1c739d9",
+    "url": "/DSC-PESU/static/media/Aekansh.5837939e.jpeg"
   },
   {
     "revision": "1ac53243cad31718855cbc8ed0ddd16e",
@@ -104,11 +108,7 @@ self.__precacheManifest = [
     "url": "/DSC-PESU/static/media/DSC-V.dc66e7b9.png"
   },
   {
-    "revision": "00955c347a8db0e81ee8c3695b0ce073",
-    "url": "/DSC-PESU/static/media/Google Dots by VRG.00955c34.gif"
-  },
-  {
-    "revision": "ecfaf6b91983f7ae6f184d7d583bd237",
+    "revision": "c2d173545ab18b30fb5cccfe93e3d68e",
     "url": "/DSC-PESU/index.html"
   }
 ];
