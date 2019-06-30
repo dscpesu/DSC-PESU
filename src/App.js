@@ -18,53 +18,91 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <LoaderWrapper />
+        {/* <LoaderWrapper /> */}
         <Navbar />
         <Intro />
         <Workshops />
         <Team />
-        {'HTMLPortalElement' in window ? <Projects /> : null}
+        {/* {'HTMLPortalElement' in window ? <Projects /> : null} */}
         <Footer />
       </div>
     );
   }
 }
 
+// $(document).ready(function () {
+//   //Preloader
+//   $(window).on("load", function () {
+//     var preloaderFadeOutTime = 500;
+
+//     function hidePreloader() {
+//       var preloader = $('.loader-wrapper');
+//       preloader.fadeOut(preloaderFadeOutTime);
+//     }
+//     hidePreloader();
+//   });
+// });
+
 $(document).ready(function () {
   //Preloader
   $(window).on("load", function () {
-      var preloaderFadeOutTime = 500;
-
-      function hidePreloader() {
-          var preloader = $('.loader-wrapper');
-          preloader.fadeOut(preloaderFadeOutTime);
-      }
-      hidePreloader();
+    $(window).focus()
   });
 });
 
 document.addEventListener('DOMContentLoaded', () => {
   const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
   if ($navbarBurgers.length > 0) {
-      $navbarBurgers.forEach(el => {
-          el.addEventListener('click', () => {
-              const target = el.dataset.target;
-              const $target = document.getElementById(target);
-              el.classList.toggle('is-active');
-              $target.classList.toggle('is-active');
-          });
+    $navbarBurgers.forEach(el => {
+      el.addEventListener('click', () => {
+        const target = el.dataset.target;
+        const $target = document.getElementById(target);
+        el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
       });
+    });
   }
 
 });
 
-$(window).scroll(function() {     
+$(window).scroll(function () {
   var scroll = $(window).scrollTop();
   if (scroll > 0) {
-      $(".navbar").addClass("has-shadow");
+    $(".navbar").addClass("has-shadow");
   }
   else {
-      $(".navbar").removeClass("has-shadow");
+    $(".navbar").removeClass("has-shadow");
+  }
+});
+
+
+var keys = [104, 104, 104, 104], //[76, 79, 71, 73, 78],
+  started = false,
+  count = 0;
+$(document).keydown(function (e) {
+  var reset = function () {
+    started = false;
+    count = 0;
+    return;
+  };
+  let key = e.keyCode;
+  if (!started) {
+    if (key == 104) {
+      started = true;
+    }
+  }
+  if (started) {
+    if (keys[count] == key) {
+      count++;
+    } else {
+      reset();
+    }
+    if (count == 4) {
+      window.location.href = window.location.hash == "#/"?"#/login":"#"
+      reset();
+    }
+  } else {
+    reset();
   }
 });
 

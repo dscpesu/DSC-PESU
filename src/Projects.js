@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import LoaderWrapper from './components/loader_wrapper';
+// import LoaderWrapper from './components/loader_wrapper';
 import LoginPage from './components/login';
 
 import 'bulma';
@@ -13,24 +13,24 @@ class Projects extends Component {
   render() {
     return (
       <div className="Login">
-        <LoaderWrapper />
+        {/* <LoaderWrapper /> */}
         <LoginPage />
       </div>
     );
   }
 }
 
-$(document).ready(function () {
-  //Preloader
-  $(window).on("load", function () {
-      var preloaderFadeOutTime = 500;
+// $(document).ready(function () {
+//   //Preloader
+//   $(window).on("load", function () {
+//       var preloaderFadeOutTime = 500;
 
-      function hidePreloader() {
-          var preloader = $('.loader-wrapper');
-          preloader.fadeOut(preloaderFadeOutTime);
-      }
-      hidePreloader();
-  });
-});
+//       function hidePreloader() {
+//           var preloader = $('.loader-wrapper');
+//           preloader.fadeOut(preloaderFadeOutTime);
+//       }
+//       hidePreloader();
+//   });
+// });
 
 export default Projects;
