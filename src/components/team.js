@@ -361,10 +361,10 @@ class Team extends React.Component {
               <div className="column">
                 <div className="member">
                   <div className="photo">
-                    <img src={require("../assets/Akash.jpg")} alt="Profile" />
+                    <img src={require("../assets/Aekansh.jpeg")} alt="Profile" />
                   </div>
-                  <div className="name">Akash Mukhopadhyay</div>
-                  <div className="info">Operations</div>
+                  <div className="name">Aekansh Dixit</div>
+                  <div className="info">Project Manager</div>
                   <ul
                     className="social"
                     style={{
@@ -372,26 +372,26 @@ class Team extends React.Component {
                       position: "relative"
                     }}
                   >
-                    {/* <li className="item">
-                      <a href="#">
-                        <img src={require("../assets/Facebook.svg")} alt="Facebook" />
+                    <li className="item">
+                      <a href="mailto:me@aekansh.in" target="_blank" rel="noopener noreferrer">
+                        <img src={require("../assets/GMail.svg")} alt="GMail" />
                       </a>
                     </li>
                     <li className="item">
-                      <a href="#">
+                      <a href="https://twitter.com/Aekansh_Dixit">
                         <img src={require("../assets/Twitter.svg")} alt="Twitter" />
                       </a>
                     </li>
                     <li className="item">
-                      <a href="#">
+                      <a href="https://github.com/aekanshd">
                         <img src={require("../assets/GitHub.svg")} alt="GitHub" />
                       </a>
                     </li>
                     <li className="item">
-                      <a href="#">
+                      <a href="https://www.linkedin.com/in/aekanshdixit">
                         <img src={require("../assets/LinkedIn.svg")} alt="LinkedIn" />
                       </a>
-                    </li> */}
+                    </li>
                   </ul>
                 </div>
               </div>

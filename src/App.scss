@@ -2,11 +2,17 @@
 
 @import "@material/button/mixins";
 
+$color: #1A73E8;
+
+.b {
+    @include mdc-button-ink-color($color);
+}
+
 .b-r {
-    @include mdc-button-filled-accessible(#1A73E8);
+    @include mdc-button-filled-accessible($color);
 }
 
 .b-o {
-    @include mdc-button-outline-color(#1A73E8);
-    @include mdc-button-ink-color(#1A73E8);
+    @include mdc-button-outline-color($color);
+    @include mdc-button-ink-color($color);
 }

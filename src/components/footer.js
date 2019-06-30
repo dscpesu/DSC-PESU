@@ -4,10 +4,10 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDesktop, faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
 // import { faFacebook, faTwitter, faLinkedin, faDribbble, faGithub } from '@fortawesome/free-brands-svg-icons'
-import { faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faInstagram, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 
 // library.add(faDesktop, faChevronLeft, faChevronRight, faFacebook, faTwitter, faLinkedin, faDribbble, faGithub);
-library.add(faDesktop, faChevronLeft, faChevronRight, faInstagram);
+library.add(faDesktop, faChevronLeft, faChevronRight, faInstagram, faLinkedin, faGithub);
 
 class Footer extends React.Component {
   render() {
@@ -26,8 +26,11 @@ class Footer extends React.Component {
                   src={require("../assets/DSC-V.png")}
                   alt="DSC PESU Logo"
                 />
-                <h2 className="subtitle">
+                {/* <h2 className="subtitle">
                   <FontAwesomeIcon icon="chevron-left" /> Coded <FontAwesomeIcon icon="chevron-right" /> with a <FontAwesomeIcon icon="desktop" /> by VRG.
+                </h2> */}
+                <h2 className="subtitle">
+                  <FontAwesomeIcon icon="chevron-left" /> Join us on Social Media! <FontAwesomeIcon icon="chevron-right" />
                 </h2>
                 <div className="social-links" style={{
                   margin: "25px 0 0 0"
@@ -57,9 +60,19 @@ class Footer extends React.Component {
                 <FontAwesomeIcon icon={['fab', 'github']} size="lg" />
               </span>
             </a> */}
+                  <a href="https://www.linkedin.com/company/dscpesu/" target="_blank" rel="noopener noreferrer">
+                    <span className="icon is-large">
+                      <FontAwesomeIcon icon={['fab', 'linkedin']} size="lg" />
+                    </span>
+                  </a>
                   <a href="https://www.instagram.com/dscpesu/" target="_blank" rel="noopener noreferrer">
                     <span className="icon is-large">
                       <FontAwesomeIcon icon={['fab', 'instagram']} size="lg" />
+                    </span>
+                  </a>
+                  <a href="https://github.com/dscpesu/" target="_blank" rel="noopener noreferrer">
+                    <span className="icon is-large">
+                      <FontAwesomeIcon icon={['fab', 'github']} size="lg" />
                     </span>
                   </a>
                 </div>

@@ -24,11 +24,11 @@ class Intro extends React.Component {
                   Welcome to The Developer Student Clubs
                 </h1>
                 <h2 className="subtitle is-size-2-desktop">PES University</h2>
-                <a href="https://bit.ly/dsc-pesu-projects" target="_blank" rel="noopener noreferrer">
+                {/* <a href="https://bit.ly/dsc-pesu-projects" target="_blank" rel="noopener noreferrer">
                   <Button raised className="b-r">
                     Enroll Now!
                   </Button>
-                </a>
+                </a> */}
               </div>
             </div>
           </div>

@@ -5,6 +5,7 @@ class Workshops extends React.Component {
     return (
       <section
         className="section workshops is-medium is-white has-text-centered"
+        id="workshops"
         style={{
           margin: "0 0 50px 0"
         }}
