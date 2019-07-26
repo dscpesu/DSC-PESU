@@ -4,7 +4,7 @@ import Loader from "./loader";
 class LoaderWrapper extends React.Component {
   render() {
     return (
-      <div className="loader-wrapper">
+      <div className="dsc-lw loader-wrapper">
         <Loader />
       </div>
     );

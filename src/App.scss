@@ -1,18 +1,210 @@
-@import "@material/react-button/index.scss";
+@import '@material/react-button/index.scss';
+@import '@material/react-card/index.scss';
+@import '@material/react-layout-grid/index.scss';
+@import '@material/react-linear-progress/index.scss';
+@import '@material/react-material-icon/index.scss';
+@import '@material/react-text-field/index.scss';
+@import '@material/react-top-app-bar/index.scss';
+@import '@material/react-typography/index.scss';
+@import '@material/button/mixins';
+@import '@material/textfield/mixins';
 
-@import "@material/button/mixins";
+@charset "utf-8";
 
-$color: #1A73E8;
+$primary: #FFFFFF;
+// $dark: #202124;
+$GBlue: #1A73E8;
+$GGray: #676C72;
+$GText: $GGray;
+$BackgroundLight: #FFFFFF;
+$BackgroundLightAccent: #F1F3F4;
+$BackgroundDark: #202124;
+$BackgroundDarkAccent: #424346;
+$navbar-item-hover-background-color: #FFFFFF;
 
 .b {
-    @include mdc-button-ink-color($color);
+    @include mdc-button-ink-color($GBlue);
 }
 
 .b-r {
-    @include mdc-button-filled-accessible($color);
+    @include mdc-button-filled-accessible($GBlue);
 }
 
 .b-o {
-    @include mdc-button-outline-color($color);
-    @include mdc-button-ink-color($color);
+    @include mdc-button-outline-color($GBlue);
+    @include mdc-button-ink-color($GBlue);
 }
+
+//Home
+
+body {
+    font-family: Google Sans;
+    // color: $GGray;
+    // background-color: $BackgroundDark;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.dsc-n {
+    transition: box-shadow .2s ease-in-out;
+}
+
+.navbar.has-shadow {
+    box-shadow: 0 .125rem .3125rem rgba(0,0,0,0.26);
+}
+
+.loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $BackgroundDark;
+    z-index: 999999;
+}
+
+.pageloader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('./assets/Google Dots by VRG.gif') no-repeat center center;
+}
+
+footer a {
+    color: #212121;
+    text-decoration: none;
+}
+
+.portal-reveal {
+    transform: scale(1.0);
+    border-radius: 0px;
+    /* position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%; */
+}
+
+.portal {
+    height: 500px;
+}
+
+#portal {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    opacity: 1;
+    box-shadow: 0 0 20px 10px #999;
+    transform: scale(0.4);
+    transition:
+        transform 0.4s;
+    /* z-index: 10000; */
+}
+
+.dsc-w {
+    margin: 100px 0px;
+}
+
+.dsc-w title {
+    margin: 50px 0px;
+}
+
+//Projects
+
+.Projects .mdc-card {
+    min-width: 300px;
+    padding: 2%;
+    margin: 0px;
+}
+
+.Projects .CardMain {
+    // height: 300px;
+}
+
+.Projects .mdc-typography--headline4 {
+    margin-top: 10%;
+}
+
+.Projects .members {
+    margin-top: 10%;
+    height: 125px;
+}
+
+.Projects .mdc-typography--headline6 {
+    margin-top: 15%;
+}
+
+.Projects .mentor {
+    margin-bottom: 10%;
+}
+
+.Projects .mdc-typography--body1 {
+    height: 200px;
+    padding: 10% 10% 10% 10%;
+    border-top: 1px solid rgba(0,0,0,0.12);
+    text-align: justify;
+    font-size: 0.8em;
+}
+
+.Projects .mdc-linear-progress {
+    text-align: left;
+}
+
+//Login
+
+.Login .o-box {
+    background: linear-gradient(90deg, #34a853 4%, #4285f4 0%) top/100% 34% no-repeat, linear-gradient(90deg, #fbbc04 50%, #4285f4 0%) top/100% 82% no-repeat, linear-gradient(90deg, #fbbc04 10%, #ea4335 0%) top/100% 100%;
+    box-shadow: 0 1px 6px rgba(60, 64, 67, 0.3);
+    border: 0;
+    // margin: 12px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.Login .box {
+    box-shadow: none;
+    border-radius: 4px;
+    margin: 4px;
+}
+
+.Login .f {
+    padding: 10% 5% 20% 5%;
+}
+
+.Login .f-h5 {
+    margin-bottom: 5%;
+}
+
+.Login .f-b1 {
+    margin-bottom: 5%;
+}
+
+.Login .f-tf {
+    width: 80%;
+    margin: 0% 0% 5% 0%;
+}
+
+.Login .f-tf.main {
+    margin: 10% 0% 0% 0%;
+    @include mdc-text-field-caret-color(#000000);
+    @include mdc-text-field-focused-outline-color($GBlue);
+    @include mdc-text-field-hover-outline-color(#CCCCCC);
+    @include mdc-text-field-outline-color(#CCCCCC);
+}
+
+.Login .f-tf.main.mdc-text-field--focused {
+    @include mdc-text-field-label-color($GBlue);
+}
+
+.Login .f-b {
+    margin: 5% 10% 5% 10%;
+}
+
+@import "../node_modules/bulma/bulma.sass";

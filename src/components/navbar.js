@@ -5,7 +5,7 @@ class Navbar extends React.Component {
   render() {
     return (
       <nav
-        className="navbar is-fixed-top"
+        className="dsc-n navbar is-fixed-top"
         role="navigation"
         aria-label="main navigation"
       >
@@ -33,8 +33,17 @@ class Navbar extends React.Component {
           <div id="navbarMenu" className="navbar-menu">
             <div className="navbar-start" />
             <div className="navbar-end has-text-centered">
-              <a className="navbar-item" href="#workshops" target="_blank" rel="noopener noreferrer">
+              <a className="navbar-item" href="#workshops" rel="noopener noreferrer">
                 Workshops
+              </a>
+              <a className="navbar-item" href="#team" rel="noopener noreferrer">
+                Team
+              </a>
+              <a className="navbar-item" href="#/projects" rel="noopener noreferrer">
+                Projects
+              </a>
+              <a className="navbar-item" href="#footer" rel="noopener noreferrer">
+                Social
               </a>
               <div className="navbar-item">
                 {/* <a href="https://bit.ly/dsc-pesu-projects" target="_blank" rel="noopener noreferrer">

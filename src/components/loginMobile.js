@@ -1,9 +1,7 @@
 import React from "react";
 import Button from '@material/react-button';
 import TextField, { HelperText, Input } from '@material/react-text-field';
-// import "@material/react-text-field/index.scss";
 import { Body1, Headline5 } from '@material/react-typography';
-import '@material/react-typography/index.scss';
 
 class Intro extends React.Component {
   state = { email: '', password: '' };
@@ -15,7 +13,7 @@ class Intro extends React.Component {
           <div className="container">
             <div className="columns is-centered">
               <div className="column is-6-tablet is-6-desktop is-5-widescreen">
-                <form className="box f" action="" method="post">
+                <form className="mybox f" action="" method="post">
                   <img
                     src={require("../assets/DSC-Badge-by-VRG.svg")}
                     alt="Developer Student Clubs"
@@ -40,20 +38,21 @@ class Intro extends React.Component {
                       password={this.state.password}
                       onChange={(e) => this.setState({ password: e.currentTarget.password })} />
                   </TextField>
-                  <Button className="b f-b is-pulled-left">
-                    Create Account
-                  </Button>
-                  <Button className="b-r f-b is-pulled-right"
-                    raised
-                  >
-                    SIGN IN
-                  </Button>
                 </form>
               </div>
             </div>
           </div>
         </div>
-        <div className="hero-foot" />
+        <div className="hero-foot">
+          <Button className="b f-b is-pulled-left">
+            Create Account
+                  </Button>
+          <Button className="b-r f-b is-pulled-right"
+            raised
+          >
+            SIGN IN
+                  </Button>
+        </div>
       </section>
     );
   }

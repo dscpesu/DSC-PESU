@@ -12,7 +12,7 @@ library.add(faDesktop, faChevronLeft, faChevronRight, faInstagram, faLinkedin, f
 class Footer extends React.Component {
   render() {
     return (
-      <footer className="hero is-white has-text-centered is-fullheight-with-navbar">
+      <footer className="dsc-f hero has-text-centered is-fullheight-with-navbar">
         <div className="hero-body">
           <div className="container">
             <div className="columns is-centered">

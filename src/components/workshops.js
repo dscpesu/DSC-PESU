@@ -4,18 +4,12 @@ class Workshops extends React.Component {
   render() {
     return (
       <section
-        className="section workshops is-medium is-white has-text-centered"
+        className="dsc-w hero workshops has-text-centered"
         id="workshops"
-        style={{
-          margin: "0 0 50px 0"
-        }}
       >
-        <div className="container is-narrow">
+        <div className="container is-widescreen">
           <h1
             className="title is-spaced is-size-2-desktop is-size-3-mobile"
-            style={{
-              margin: "0 0 100px 0"
-            }}
           >
             Our Workshops
           </h1>
@@ -23,8 +17,8 @@ class Workshops extends React.Component {
             <div className="columns is-multiline is-mobile">
               <div className="column is-12-mobile is-half-tablet is-one-third-desktop">
                 <div className="card" style={{
-                          borderRadius: "20px"
-                        }}>
+                  borderRadius: "20px"
+                }}>
                   <div className="card-image">
                     <figure className="image">
                       <img
@@ -56,8 +50,8 @@ class Workshops extends React.Component {
                     </div>
                   </div>
                   <footer className="card-footer">
-                    <a href="https://www.instagram.com/p/BvjuXVYDLdI/" target="_blank" rel="noopener noreferrer" className="card-footer-item">
-                      Learn More...
+                    <a href="#/gallery" target="_blank" rel="noopener noreferrer" className="card-footer-item">
+                      Have a look!
                     </a>
                   </footer>
                 </div>

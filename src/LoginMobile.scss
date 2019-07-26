@@ -4,8 +4,12 @@
 
 $color: #1A73E8;
 
+.mybox {
+    // padding: 10%;
+}
+
 .f {
-    padding: 10% 5% 20% 5%;
+    padding: 10% 5% 10% 5%;
 }
 
 .f-h5 {
@@ -17,7 +21,7 @@ $color: #1A73E8;
 }
 
 .f-tf {
-    width: 80%;
+    width: 100%;
     margin: 0% 0% 5% 0%;
 }
 
@@ -34,5 +38,9 @@ $color: #1A73E8;
 }
 
 .f-b {
-    margin: 5% 10% 5% 10%;
+    // margin: 0% 0% 00% 0%;
+}
+
+.hero-foot {
+    padding: 0% 10% 5% 10%;
 }

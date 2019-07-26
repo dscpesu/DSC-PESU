@@ -1,17 +1,16 @@
 import React, { Component } from 'react';
 
-import LoaderWrapper from './components/loader_wrapper';
+// import LoaderWrapper from './components/loader_wrapper';
 import Navbar from './components/navbar';
 import Intro from './components/intro';
 import Workshops from './components/workshops';
-import Projects from './components/projects';
+// import Projects from './components/sites';
 import Team from './components/team';
 import Footer from './components/footer';
 
-import 'bulma';
+// import 'bulma';
 import $ from 'jquery';
 
-import './css/home.css';
 import './App.scss';
 
 class App extends Component {

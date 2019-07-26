@@ -24,7 +24,7 @@ class Projects extends React.Component {
             //         DSC Projects are here!
             //       </h1>
             //   </section>
-            <section className="hero has-text-centered is-fullheight-with-navbar">
+            <section className="dsc-s hero has-text-centered is-fullheight-with-navbar">
                 <div className="hero-body">
                     <div className="container">
                         <h1 className="title is-spaced is-size-1-desktop is-size-2-mobile"

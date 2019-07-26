@@ -5,6 +5,7 @@ import './index.css';
 import App from './App';
 import Projects from './Projects';
 import Login from './Login';
+import WGallery from './Gallery';
 import * as serviceWorker from './serviceWorker';
 
 function AppRouter() {
@@ -14,6 +15,7 @@ function AppRouter() {
                 <Route path="/" exact component={App} />
                 <Route path="/projects/" component={Projects} />
                 <Route path="/login/" component={Login} />
+                <Route path="/gallery/" component={WGallery} />
             </div>
         </Router>
     );

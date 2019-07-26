@@ -30,22 +30,22 @@
 }
 
 .team .column::before {
-  border-bottom-width: medium;
-  border-left-width: medium;
+  border-bottom-width: thick;
+  border-left-width: thick;
 }
 
 .team .column::after {
-  border-top-width: medium;
-  border-right-width: medium;
+  border-top-width: thick;
+  border-right-width: thick;
 }
 
 .team .column:hover::before,
 .team .column:hover::after {
   border-bottom-color: #4285F4;
-  border-top-color: #DB4437;
-  border-right-color: #F4B400;
-  border-left-color: #0F9D58;
-  transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+  border-top-color: #EA4335;
+  border-right-color: #FBBC05;
+  border-left-color: #34A853;
+  transition: border-color 0s ease 0.5s, width 0.25s ease 0.5s, height 0.25s ease 0.75s;
   width: 100%;
   height: 100%;
 }
@@ -138,7 +138,7 @@
 
 .team .name {
   color: #313435;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Google Sans', sans-serif;
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 2.625rem;
@@ -146,7 +146,7 @@
 
 .team .info {
   color: #6F808A;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Google Sans', sans-serif;
   font-size: 0.875rem;
   line-height: 2.375rem;
 }
