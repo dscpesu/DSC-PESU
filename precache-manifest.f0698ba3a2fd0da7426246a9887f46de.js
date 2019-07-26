@@ -1,23 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "99c27e77fe5a030c5d0e",
-    "url": "/DSC-PESU/static/css/main.f3751ad5.chunk.css"
+    "revision": "863897f279b5f478df87",
+    "url": "/DSC-PESU/static/css/main.95b6ee69.chunk.css"
   },
   {
-    "revision": "99c27e77fe5a030c5d0e",
-    "url": "/DSC-PESU/static/js/main.00d0a6a2.chunk.js"
+    "revision": "863897f279b5f478df87",
+    "url": "/DSC-PESU/static/js/main.ad731fb2.chunk.js"
   },
   {
     "revision": "bc951fc5e7dbf964e0dc",
     "url": "/DSC-PESU/static/js/runtime~main.5dec7e2f.js"
   },
   {
-    "revision": "bc43af776a0c2ef3cc98",
-    "url": "/DSC-PESU/static/css/2.8529dc3a.chunk.css"
-  },
-  {
-    "revision": "bc43af776a0c2ef3cc98",
-    "url": "/DSC-PESU/static/js/2.87ef2e44.chunk.js"
+    "revision": "c2b76239b53d2baaa848",
+    "url": "/DSC-PESU/static/js/2.57cf2173.chunk.js"
   },
   {
     "revision": "991411505951f7763636c7f0fa823803",
@@ -44,12 +40,64 @@ self.__precacheManifest = [
     "url": "/DSC-PESU/static/media/Twitter.f1756ea2.svg"
   },
   {
-    "revision": "00955c347a8db0e81ee8c3695b0ce073",
-    "url": "/DSC-PESU/static/media/Google Dots by VRG.00955c34.gif"
-  },
-  {
     "revision": "300f3bec7bdaf7001c9f28184235b88b",
     "url": "/DSC-PESU/static/media/DSC-Badge-by-VRG.300f3bec.svg"
+  },
+  {
+    "revision": "3bb1607722acbb3cd52bca633b04be12",
+    "url": "/DSC-PESU/static/media/image01.3bb16077.jpg"
+  },
+  {
+    "revision": "610e8c6df7b4f7f5da597da437e9e61e",
+    "url": "/DSC-PESU/static/media/image02.610e8c6d.jpg"
+  },
+  {
+    "revision": "9e92291dc35bd12016279b61b3b0e5bc",
+    "url": "/DSC-PESU/static/media/image03.9e92291d.jpg"
+  },
+  {
+    "revision": "0124971921d59af8e348fcd4af86eae5",
+    "url": "/DSC-PESU/static/media/image04.01249719.jpg"
+  },
+  {
+    "revision": "cafbfedaf5b4bebd30b6a4d849556932",
+    "url": "/DSC-PESU/static/media/image05.cafbfeda.jpg"
+  },
+  {
+    "revision": "65eb918e2248527a79fb17389d481b79",
+    "url": "/DSC-PESU/static/media/image06.65eb918e.jpg"
+  },
+  {
+    "revision": "58625d243e85ad42d524844fd85da37f",
+    "url": "/DSC-PESU/static/media/image07.58625d24.jpg"
+  },
+  {
+    "revision": "e4894933aef72116973df51669089383",
+    "url": "/DSC-PESU/static/media/image08.e4894933.jpg"
+  },
+  {
+    "revision": "4950caa678148c93a896cf4e0965ec7b",
+    "url": "/DSC-PESU/static/media/image09.4950caa6.jpg"
+  },
+  {
+    "revision": "1d3a17fb8278a7ec5d604330156db9a8",
+    "url": "/DSC-PESU/static/media/image10.1d3a17fb.jpg"
+  },
+  {
+    "revision": "7b14597be1ae47319285d451298340d0",
+    "url": "/DSC-PESU/static/media/image11.7b14597b.jpg"
+  },
+  {
+    "revision": "9f9c7ef261c7745a1687bff1abf2885d",
+    "url": "/DSC-PESU/static/media/image12.9f9c7ef2.jpg"
+  },
+  {
+    "revision": "1a61ae30af0802b634db280b7a6869af",
+    "url": "/DSC-PESU/static/media/image13.1a61ae30.jpg"
+  },
+  {
+    "revision": "e282840571aff342d5e891e34ef12d93",
+    "url": "/DSC-PESU/static/media/Yash-Final.e2828405.svg"
   },
   {
     "revision": "c2c5f62ddbd03435e88c3792b9ff71b7",
@@ -108,7 +156,11 @@ self.__precacheManifest = [
     "url": "/DSC-PESU/static/media/DSC-V.dc66e7b9.png"
   },
   {
-    "revision": "daa2decc049c283110a5732298170f7a",
+    "revision": "00955c347a8db0e81ee8c3695b0ce073",
+    "url": "/DSC-PESU/static/media/Google Dots by VRG.00955c34.gif"
+  },
+  {
+    "revision": "69d5d0f786f0dcce29b74733f36afde0",
     "url": "/DSC-PESU/index.html"
   }
 ];
