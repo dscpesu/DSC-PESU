@@ -9,8 +9,6 @@
 @import '@material/button/mixins';
 @import '@material/textfield/mixins';
 
-@charset "utf-8";
-
 $primary: #FFFFFF;
 // $dark: #202124;
 $GBlue: #1A73E8;
@@ -121,10 +119,6 @@ footer a {
     min-width: 300px;
     padding: 2%;
     margin: 0px;
-}
-
-.Projects .CardMain {
-    // height: 300px;
 }
 
 .Projects .mdc-typography--headline4 {

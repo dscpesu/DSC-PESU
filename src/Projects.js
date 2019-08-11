@@ -54,7 +54,6 @@ class Projects extends Component {
     return (
       <div className="Projects">
         {/* <LoaderWrapper /> */}
-        <Navbar />
         <section className="p-y hero is-white is-fullheight" style={{ background: `url(${Background}) no-repeat right top`, backgroundSize: `auto 100%` }}>
           <div className="hero-body">
             <div className="container">

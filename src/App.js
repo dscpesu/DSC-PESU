@@ -86,18 +86,18 @@ $(document).keydown(function (e) {
   };
   let key = e.keyCode;
   if (!started) {
-    if (key == 104) {
+    if (key === 104) {
       started = true;
     }
   }
   if (started) {
-    if (keys[count] == key) {
+    if (keys[count] === key) {
       count++;
     } else {
       reset();
     }
-    if (count == 4) {
-      window.location.href = window.location.hash == "#/"?"#/login":"#"
+    if (count === 4) {
+      window.location.href = window.location.hash === "#/"?"#/login":"#"
       reset();
     }
   } else {

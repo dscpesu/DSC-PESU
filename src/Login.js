@@ -5,7 +5,13 @@ import { Body1, Headline5 } from '@material/react-typography';
 // import LoaderWrapper from './components/loader_wrapper';
 
 class Login extends Component {
-  state = { email: '', password: '' };
+  constructor(props) {
+    super(props);
+    this.state = {
+      email: '',
+      password: ''
+    };
+  }
 
   render() {
     return (
