@@ -39,7 +39,7 @@ class Navbar extends React.Component {
               <a className="navbar-item" href="#team" rel="noopener noreferrer">
                 Team
               </a>
-              <a className="navbar-item" href="#/projects" rel="noopener noreferrer">
+              <a className="navbar-item" href="projects" rel="noopener noreferrer">
                 Projects
               </a>
               <a className="navbar-item" href="#footer" rel="noopener noreferrer">

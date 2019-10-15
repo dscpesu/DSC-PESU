@@ -22,12 +22,14 @@ class Login extends Component {
             <div className="container">
               <div className="columns is-centered">
                 <div className="column o-box is-6-tablet is-6-desktop is-5-widescreen">
-                  <form className="box f" action="" method="post">
-                    <img
-                      src={require("./assets/DSC-Badge-by-VRG.svg")}
-                      alt="Developer Student Clubs"
-                      width={75}
-                    />
+                  <form className="box f">
+                    <a href="/">
+                      <img
+                        src={require("./assets/DSC-Badge-by-VRG.svg")}
+                        alt="Developer Student Clubs"
+                        width={75}
+                      />
+                    </a>
                     <Headline5 className="f-h5">Sign in</Headline5>
                     <Body1 className="f-b1">Continue to DSC PESU</Body1>
                     <TextField
@@ -35,8 +37,10 @@ class Login extends Component {
                       outlined
                       label='Email'
                     ><Input
-                        email={this.state.email}
-                        onChange={(e) => this.setState({ email: e.currentTarget.email })} />
+                        type="email"
+                        // required
+                        value={this.state.email}
+                        onChange={(e) => this.setState({ email: e.currentTarget.value })} />
                     </TextField>
                     <TextField
                       className="f-tf main"
@@ -44,8 +48,11 @@ class Login extends Component {
                       label='Password'
                       helperText={<HelperText className="f-tf">Minimum 8 characters, ASCII Characters only.</HelperText>}
                     ><Input
-                        password={this.state.password}
-                        onChange={(e) => this.setState({ password: e.currentTarget.password })} />
+                        type="password"
+                        // required
+                        minLength='8'
+                        value={this.state.password}
+                        onChange={(e) => this.setState({ password: e.currentTarget.value })} />
                     </TextField>
                     <Button className="b f-b is-pulled-left">
                       Create Account

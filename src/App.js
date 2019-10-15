@@ -6,6 +6,7 @@ import Intro from './components/intro';
 import Workshops from './components/workshops';
 // import Projects from './components/sites';
 import Team from './components/team';
+import { Hub } from './components/hub';
 import Footer from './components/footer';
 
 // import 'bulma';
@@ -22,6 +23,7 @@ class App extends Component {
         <Intro />
         <Workshops />
         <Team />
+        <Hub />
         {/* {'HTMLPortalElement' in window ? <Projects /> : null} */}
         <Footer />
       </div>
@@ -97,7 +99,7 @@ $(document).keydown(function (e) {
       reset();
     }
     if (count === 4) {
-      window.location.href = window.location.hash === "#/"?"#/login":"#"
+      window.location = window.location.pathname === "/" ? "login" : "/"
       reset();
     }
   } else {
