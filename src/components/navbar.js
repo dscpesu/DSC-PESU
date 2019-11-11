@@ -5,7 +5,7 @@ class Navbar extends React.Component {
   render() {
     return (
       <nav
-        className="dsc-n navbar is-fixed-top"
+        className="dsc-n navbar is-fixed-top is-dark"
         role="navigation"
         aria-label="main navigation"
       >

@@ -17,7 +17,7 @@ class Login extends Component {
     return (
       <div className="Login">
         {/* <LoaderWrapper /> */}
-        <section className="hero is-white has-text-centered is-fullheight">
+        <section className="hero is-white has-text-centered is-fullheight is-dark">
           <div className="hero-body">
             <div className="container">
               <div className="columns is-centered">

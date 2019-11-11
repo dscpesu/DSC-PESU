@@ -21,6 +21,7 @@
     "@types/react": "^16.8.23",
     "@types/react-dom": "^16.8.5",
     "bulma": "^0.7.5",
+    "bulma-pageloader": "^0.3.0",
     "gh-pages": "^2.0.1",
     "jquery": "^3.4.1",
     "node-sass": "^4.12.0",

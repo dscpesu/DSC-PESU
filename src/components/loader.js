@@ -4,17 +4,17 @@ import '../css/Google Dots by VRG.scss';
 class Loader extends React.Component {
   render() {
     return (
-      <div class="dsc-l hero is-fullheight">
-        <div class="hero-body">
-          <div class="container has-text-centered">
-            <div class="dot" id="blue"></div>
-            <div class="dot" id="red"></div>
-            <div class="dot" id="yellow"></div>
-            <div class="dot" id="green"></div>
+      <div className="dsc-l hero is-fullheight">
+        <div className="pageloader hero-body is-active is-bottom-to-top">
+          <div className="container has-text-centered">
+            <div className="dot" id="blue"></div>
+            <div className="dot" id="red"></div>
+            <div className="dot" id="yellow"></div>
+            <div className="dot" id="green"></div>
           </div>
         </div>
       </div>
-    )
+    );
   }
 }
 

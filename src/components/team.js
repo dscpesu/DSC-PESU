@@ -4,7 +4,7 @@ import '../css/team.css';
 class Team extends React.Component {
   render() {
     return (
-      <section className="dsc-t hero has-text-centered">
+      <section className="dsc-t hero has-text-centered is-dark">
         <h1 className="subtitle is-size-1-desktop is-size-2-tablet is-size-3-mobile">
           <span
             style={{

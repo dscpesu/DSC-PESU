@@ -4,7 +4,7 @@ import Button from '@material/react-button';
 class Intro extends React.Component {
   render() {
     return (
-      <section className="dsc-i hero has-text-centered is-fullheight">
+      <section className="dsc-i hero has-text-centered is-fullheight is-dark">
         <div className="hero-body">
           <div className="container">
             <div className="columns is-centered">

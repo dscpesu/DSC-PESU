@@ -1,16 +1,18 @@
 import React, { Component } from 'react';
 
-// import LoaderWrapper from './components/loader_wrapper';
+import Loader from './components/loader';
 import Navbar from './components/navbar';
 import Intro from './components/intro';
 import Workshops from './components/workshops';
 // import Projects from './components/sites';
 import Team from './components/team';
-import { Hub } from './components/hub';
+// import { Hub } from './components/hub';
 import Footer from './components/footer';
 
 // import 'bulma';
 import $ from 'jquery';
+
+// import 'bulma-pageloader';
 
 import './App.scss';
 
@@ -18,12 +20,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {/* <LoaderWrapper /> */}
+        <Loader />
         <Navbar />
         <Intro />
         <Workshops />
         <Team />
-        <Hub />
+        {/* <Hub /> */}
         {/* {'HTMLPortalElement' in window ? <Projects /> : null} */}
         <Footer />
       </div>
@@ -31,23 +33,16 @@ class App extends Component {
   }
 }
 
-// $(document).ready(function () {
-//   //Preloader
-//   $(window).on("load", function () {
-//     var preloaderFadeOutTime = 500;
-
-//     function hidePreloader() {
-//       var preloader = $('.loader-wrapper');
-//       preloader.fadeOut(preloaderFadeOutTime);
-//     }
-//     hidePreloader();
-//   });
-// });
-
 $(document).ready(function () {
   //Preloader
   $(window).on("load", function () {
-    $(window).focus()
+    $(window).focus();
+    var preloaderFadeOutTime = 500;
+    function hidePreloader() {
+      var preloader = $('.dsc-l');
+      preloader.fadeOut(preloaderFadeOutTime);
+    }
+    setTimeout(() => hidePreloader(), 2000);
   });
 });
 

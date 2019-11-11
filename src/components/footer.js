@@ -13,7 +13,7 @@ class Footer extends React.Component {
   render() {
     return (
       <footer
-        className="dsc-f hero has-text-centered is-fullheight-with-navbar"
+        className="dsc-f hero has-text-centered is-fullheight-with-navbar is-dark"
         id="footer"
       >
         <div className="hero-body">
@@ -65,17 +65,17 @@ class Footer extends React.Component {
             </a> */}
                   <a href="https://www.linkedin.com/company/dscpesu/" target="_blank" rel="noopener noreferrer">
                     <span className="icon is-large">
-                      <FontAwesomeIcon icon={['fab', 'linkedin']} size="lg" />
+                      <FontAwesomeIcon icon={['fab', 'linkedin']} size="lg" style={{ color: "#FFF" }} />
                     </span>
                   </a>
                   <a href="https://www.instagram.com/dscpesu/" target="_blank" rel="noopener noreferrer">
                     <span className="icon is-large">
-                      <FontAwesomeIcon icon={['fab', 'instagram']} size="lg" />
+                      <FontAwesomeIcon icon={['fab', 'instagram']} size="lg" style={{ color: "#FFF" }} />
                     </span>
                   </a>
                   <a href="https://github.com/dscpesu/" target="_blank" rel="noopener noreferrer">
                     <span className="icon is-large">
-                      <FontAwesomeIcon icon={['fab', 'github']} size="lg" />
+                      <FontAwesomeIcon icon={['fab', 'github']} size="lg" style={{ color: "#FFF" }} />
                     </span>
                   </a>
                 </div>

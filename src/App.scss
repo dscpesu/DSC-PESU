@@ -1,5 +1,5 @@
 $primary: #FFFFFF;
-// $dark: #202124;
+$dark: #202124;
 $GBlue: #1A73E8;
 $GGray: #676C72;
 $GText: $GGray;
@@ -39,8 +39,8 @@ $navbar-item-hover-background-color: #FFFFFF;
 
 body {
     font-family: Google Sans;
-    // color: $GGray;
-    // background-color: $BackgroundDark;
+    color: $GGray;
+    background-color: $BackgroundDark;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -60,23 +60,16 @@ body {
         box-shadow: 0 .125rem .3125rem rgba(0, 0, 0, 0.26);
     }
 
-    .loader-wrapper {
+    .dsc-l {
         position: fixed;
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
         background-color: $BackgroundDark;
-        z-index: 999999;
-    }
-
-    .pageloader {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: url('./assets/Google Dots by VRG.gif') no-repeat center center;
+        z-index: 999998;
+        transition: transform .35s ease-out, -webkit-transform .35s ease-out;
+        will-change: transform;
     }
 
     footer a {

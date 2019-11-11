@@ -4,7 +4,7 @@ class Workshops extends React.Component {
   render() {
     return (
       <section
-        className="dsc-w hero workshops has-text-centered"
+        className="dsc-w hero workshops has-text-centered is-dark"
         id="workshops"
       >
         <div className="container is-widescreen">
@@ -17,7 +17,8 @@ class Workshops extends React.Component {
             <div className="columns is-multiline is-mobile">
               <div className="column is-12-mobile is-half-tablet is-one-third-desktop">
                 <div className="card" style={{
-                  borderRadius: "20px"
+                  borderRadius: "20px",
+                  backgroundColor: "#202124"
                 }}>
                   <div className="card-image">
                     <figure className="image">
@@ -33,7 +34,6 @@ class Workshops extends React.Component {
                   </div>
                   <div className="card-content">
                     <div className="media">
-                      {}
                       <div className="media-content">
                         <p className="title is-4">
                           Introduction to Machine Learning
@@ -50,7 +50,7 @@ class Workshops extends React.Component {
                     </div>
                   </div>
                   <footer className="card-footer">
-                    <a href="#/gallery" target="_blank" rel="noopener noreferrer" className="card-footer-item">
+                    <a href="#/gallery" target="_blank" rel="noopener noreferrer" className="card-footer-item" style={{ color: "#FFF" }}>
                       Have a look!
                     </a>
                   </footer>
