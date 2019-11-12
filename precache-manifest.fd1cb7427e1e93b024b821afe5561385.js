@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "16ada4b394391ef7036b3a36b0754690",
+    "revision": "0f180897d346a1ef86b08c23b4d273a4",
     "url": "/DSC-PESU/index.html"
   },
   {
-    "revision": "419ffa2bf48fac6b7014",
-    "url": "/DSC-PESU/static/css/main.a58bda02.chunk.css"
+    "revision": "c0b0273570cd6a20a123",
+    "url": "/DSC-PESU/static/css/main.676f37e0.chunk.css"
   },
   {
-    "revision": "a4853c441d62c7e67f93",
-    "url": "/DSC-PESU/static/js/2.fc06d6c5.chunk.js"
+    "revision": "1a1a0be64ccdce397646",
+    "url": "/DSC-PESU/static/js/2.193c9ac8.chunk.js"
   },
   {
-    "revision": "419ffa2bf48fac6b7014",
-    "url": "/DSC-PESU/static/js/main.976aa6ef.chunk.js"
+    "revision": "c0b0273570cd6a20a123",
+    "url": "/DSC-PESU/static/js/main.46dfe066.chunk.js"
   },
   {
     "revision": "bc951fc5e7dbf964e0dc",
@@ -50,10 +50,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "a861f00352e24640d84add0f3d9393cb",
     "url": "/DSC-PESU/static/media/GitHub.a861f003.svg"
-  },
-  {
-    "revision": "00955c347a8db0e81ee8c3695b0ce073",
-    "url": "/DSC-PESU/static/media/Google Dots by VRG.00955c34.gif"
   },
   {
     "revision": "901657aed4830ebbf866910d6da73002",
