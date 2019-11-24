@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/DSC-PESU/precache-manifest.fd1cb7427e1e93b024b821afe5561385.js"
+  "/DSC-PESU/precache-manifest.937aeb01865d122b5cc914de401d3d01.js"
 );
 
 self.addEventListener('message', (event) => {
