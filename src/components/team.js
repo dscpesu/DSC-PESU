@@ -211,7 +211,7 @@ class Team extends React.Component {
               <div className="column">
                 <div className="member">
                   <div className="photo">
-                    <img src={require("../assets/VRG [AF].png")} alt="Profile" />
+                    <img src={require("../assets/VRG20.gif")} alt="Profile" />
                   </div>
                   <div className="name">Varun R. Gupta</div>
                   <div className="info">

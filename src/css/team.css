@@ -65,9 +65,9 @@
   flex: 0 0 33.3%;
   padding: 10px;
   height: 360px;
-  background: #FFF;
-  border: 1px solid #E2E9ED;
-  box-shadow: 0 0 0 1px #E2E9ED;
+  background: #202124;
+  /* border: 1px solid #202124; */
+  /* box-shadow: 0 0 0 1px rgb(24, 26, 27); */
   box-sizing: border-box;
   transition: box-shadow 0.2s ease, -webkit-transform 0.2s ease;
   transition: box-shadow 0.2s ease, transform 0.2s ease;
@@ -78,7 +78,7 @@
 .team .column:hover {
   z-index: 1;
 
-  box-shadow: 0 8px 50px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 50px rgba(0, 0, 0, 1);
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
 
@@ -137,7 +137,7 @@
 }
 
 .team .name {
-  color: #313435;
+  color: #FFFFFF;
   font-family: 'Google Sans', sans-serif;
   font-size: 1.5rem;
   font-weight: 500;
@@ -145,7 +145,7 @@
 }
 
 .team .info {
-  color: #6F808A;
+  color: #FFFFFF;
   font-family: 'Google Sans', sans-serif;
   font-size: 0.875rem;
   line-height: 2.375rem;
@@ -167,12 +167,12 @@
 }
 
 .team .item img {
-  fill: #515F65;
+  fill: #202124;
   display: block;
   height: 30px;
   transition: fill 0.2s ease;
 }
 
 .team .item img:hover {
-  fill: #788D96;
+  fill: #202124;
 }

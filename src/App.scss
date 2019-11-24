@@ -54,10 +54,19 @@ body {
 .App {
     .dsc-n {
         transition: box-shadow .2s ease-in-out;
+        background-color: #202124;
+
+        .navbar-menu {
+            background-color: #202124;
+
+            .navbar-item a {
+                color: #FFF;
+            }
+        }
     }
 
     .navbar.has-shadow {
-        box-shadow: 0 .125rem .3125rem rgba(0, 0, 0, 0.26);
+        box-shadow: 0 .125rem .3125rem rgba(0, 0, 0, 0.5);
     }
 
     .dsc-l {
@@ -104,7 +113,12 @@ body {
     }
 
     .dsc-w {
-        margin: 100px 0px;
+        margin: 100px 20px;
+
+        .card {
+            color: #FFF;
+            box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.5);
+        }
     }
 
     .dsc-w title {

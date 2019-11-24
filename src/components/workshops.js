@@ -15,7 +15,7 @@ class Workshops extends React.Component {
           </h1>
           <div className="project-grid">
             <div className="columns is-multiline is-mobile">
-              <div className="column is-12-mobile is-half-tablet is-one-third-desktop">
+              <div className="column is-half-tablet is-one-third-desktop">
                 <div className="card" style={{
                   borderRadius: "20px",
                   backgroundColor: "#202124"
@@ -49,8 +49,8 @@ class Workshops extends React.Component {
                       <br />
                     </div>
                   </div>
-                  <footer className="card-footer">
-                    <a href="#/gallery" target="_blank" rel="noopener noreferrer" className="card-footer-item" style={{ color: "#FFF" }}>
+                  <footer className="card-footer" style={{ border: 0 }}>
+                    <a href="gallery" target="_blank" rel="noopener noreferrer" className="card-footer-item" style={{ color: "#FFF" }}>
                       Have a look!
                     </a>
                   </footer>

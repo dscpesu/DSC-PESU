@@ -45,13 +45,13 @@ class Navbar extends React.Component {
               <a className="navbar-item" href="#footer" rel="noopener noreferrer">
                 Social
               </a>
-              <div className="navbar-item">
-                {/* <a href="https://bit.ly/dsc-pesu-projects" target="_blank" rel="noopener noreferrer">
+              {/* <div className="navbar-item">
+                <a href="https://bit.ly/dsc-pesu-projects" target="_blank" rel="noopener noreferrer">
                   <Button outlined className='b-o'>
                     Enroll Now!
                   </Button>
-                </a> */}
-              </div>
+                </a>
+              </div> */}
             </div>
           </div>
         </div>
