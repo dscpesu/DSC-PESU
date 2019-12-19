@@ -10,14 +10,14 @@ import * as serviceWorker from './serviceWorker';
 
 function AppRouter() {
     return (
-        <Router>
+        <Router basename={window.location.pathname === '/DSC-PESU/' ? '/DSC-PESU/' : ''}>
             <div>
                 <Route path="/" exact component={App} />
                 <Route path="/projects/" component={Projects} />
                 <Route path="/login/" component={Login} />
                 <Route path="/gallery/" component={WGallery} />
             </div>
-        </Router>
+        </ Router >
     );
 }
 

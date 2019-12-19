@@ -17,9 +17,51 @@ import $ from 'jquery';
 import './App.scss';
 
 class App extends Component {
+  componentDidMount() {
+    // Fade pre-loader
+    setTimeout(() => { $('.dsc-l').fadeOut(500) }, 1500);
+
+    // Initialize Hamburger menu
+    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+    if ($navbarBurgers.length > 0) {
+      $navbarBurgers.forEach(el => {
+        el.addEventListener('click', () => {
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
+          el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+        });
+      });
+    }
+
+    $(window).scroll(function () {
+      var scroll = $(window).scrollTop();
+      if (scroll > 0) {
+        $(".navbar").addClass("has-shadow");
+      }
+      else {
+        $(".navbar").removeClass("has-shadow");
+      }
+    });
+  }
+
   render() {
     return (
       <div className="App">
+        <div class="snowflakes" aria-hidden="true">
+          <div class="snowflake">❅</div>
+          <div class="snowflake">❆</div>
+          <div class="snowflake">❅</div>
+          <div class="snowflake">❆</div>
+          <div class="snowflake">❅</div>
+          <div class="snowflake">❆</div>
+          <div class="snowflake">❅</div>
+          <div class="snowflake">❆</div>
+          <div class="snowflake">❅</div>
+          <div class="snowflake">❆</div>
+          <div class="snowflake">❅</div>
+          <div class="snowflake">❆</div>
+        </div>
         <Loader />
         <Navbar />
         <Intro />
@@ -32,45 +74,6 @@ class App extends Component {
     );
   }
 }
-
-$(document).ready(function () {
-  //Preloader
-  $(window).on("load", function () {
-    $(window).focus();
-    var preloaderFadeOutTime = 500;
-    function hidePreloader() {
-      var preloader = $('.dsc-l');
-      preloader.fadeOut(preloaderFadeOutTime);
-    }
-    setTimeout(() => hidePreloader(), 2000);
-  });
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-  if ($navbarBurgers.length > 0) {
-    $navbarBurgers.forEach(el => {
-      el.addEventListener('click', () => {
-        const target = el.dataset.target;
-        const $target = document.getElementById(target);
-        el.classList.toggle('is-active');
-        $target.classList.toggle('is-active');
-      });
-    });
-  }
-
-});
-
-$(window).scroll(function () {
-  var scroll = $(window).scrollTop();
-  if (scroll > 0) {
-    $(".navbar").addClass("has-shadow");
-  }
-  else {
-    $(".navbar").removeClass("has-shadow");
-  }
-});
-
 
 var keys = [104, 104, 104, 104], //[76, 79, 71, 73, 78],
   started = false,

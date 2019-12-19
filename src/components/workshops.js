@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 class Workshops extends React.Component {
   render() {
@@ -50,9 +51,10 @@ class Workshops extends React.Component {
                     </div>
                   </div>
                   <footer className="card-footer" style={{ border: 0 }}>
-                    <a href="gallery" target="_blank" rel="noopener noreferrer" className="card-footer-item" style={{ color: "#FFF" }}>
+                    {/* <a href="gallery" target="_blank" rel="noopener noreferrer" className="card-footer-item" style={{ color: "#FFF" }}>
                       Have a look!
-                    </a>
+                    </a> */}
+                    <Link to="gallery" className="card-footer-item" style={{ color: "#FFF" }}>Have a look!</Link>
                   </footer>
                 </div>
               </div>
