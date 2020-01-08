@@ -97,7 +97,7 @@ $(document).keydown(function (e) {
       reset();
     }
     if (count === 4) {
-      window.location = window.location.pathname === "/" ? "login" : "/"
+      window.location = window.location.pathname === "/" ? "#login" : "/"
       reset();
     }
   } else {

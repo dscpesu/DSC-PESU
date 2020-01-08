@@ -1,21 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { HashRouter as Router, Route, Link } from "react-router-dom";
 import './index.css';
 import App from './App';
 import Projects from './Projects';
 import Login from './Login';
 import WGallery from './Gallery';
+import Links from './Links';
 import * as serviceWorker from './serviceWorker';
 
 function AppRouter() {
     return (
-        <Router basename={window.location.pathname === '/DSC-PESU/' ? '/DSC-PESU/' : ''}>
+        <Router
+        // basename={window.location.pathname === '/DSC-PESU/' ? '/DSC-PESU/' : ''}
+        >
             <div>
                 <Route path="/" exact component={App} />
                 <Route path="/projects/" component={Projects} />
                 <Route path="/login/" component={Login} />
                 <Route path="/gallery/" component={WGallery} />
+                <Route path="/links/" component={Links} />
             </div>
         </ Router >
     );
