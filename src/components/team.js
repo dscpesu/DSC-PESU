@@ -351,7 +351,7 @@ class Team extends React.Component {
                       </a>
                     </li>
                     <li className="item">
-                      <a href="#team">
+                      <a href="https://linkedin.com/in/richaaaa" target="_blank" rel="noopener noreferrer">
                         <img src={require("../assets/LinkedIn.svg")} alt="LinkedIn" />
                       </a>
                     </li>
